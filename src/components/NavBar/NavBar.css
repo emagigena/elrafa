@@ -1,0 +1,49 @@
+.ContainerNavbar img{
+    width: 63px;
+    padding: 0px;
+    float: center;
+    
+}
+.ContainerNavbar{
+    
+    font-style: none;
+    text-decoration: none;
+    float: left;
+    background: rgb(239, 239, 239);
+    width: 100%;
+    display: table;
+    clear: both;
+    padding: 0px;
+}
+
+.NavLink{
+    list-style: none;
+    padding: 0px;
+    font-display: 100px;
+    color: black;
+    font-size: large;
+    font-weight: 100px;
+
+}
+
+.Cart{
+    background-color: rgb(245, 245, 245);
+    padding: 0px;
+    max-width: 100%;
+}
+.me-auto a{
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    font-style: none;
+    color:black;
+    font-size: large;
+    list-style: none;
+    padding: 21px;
+    float: center;
+}
+.me-auto a:hover{
+    background: black;
+    color: rgb(247, 245, 245);
+    padding: 21px;
+}

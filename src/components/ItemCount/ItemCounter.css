@@ -1,0 +1,8 @@
+.CountCard{
+    width: '18rem';
+    justify-content: center;
+    align-content: center;
+}
+.ImputCantidad{
+    padding-bottom: 10px;
+}

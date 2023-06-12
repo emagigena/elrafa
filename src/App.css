@@ -1,0 +1,11 @@
+.App{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+ 
+  display: block;
+  justify-content: center;
+  background: linear-gradient(45deg, rgb(16, 36, 65),rgb(65, 75, 87),rgb(0, 0, 0),rgb(0, 0, 0));
+  position: relative;
+  
+}

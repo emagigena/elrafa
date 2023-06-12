@@ -1,0 +1,48 @@
+@media (max-width: 728px){
+    .CardsInfo{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .d-flex{  
+        float:none;   
+    }
+    li{
+        align-items: center;
+    }
+}
+@media (min-width: 728px){
+    .CardsInfo{
+        width: 100%;
+        float:none;
+        
+    }
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float:none;
+        width: 33%;
+        margin: 0.1% !important;
+        padding: 1%;
+    }
+}
+
+.cards {
+    z-index: 99;
+}
+
+h1{
+    color: white;
+    background-color: black;
+}
+.d-flex{
+    float: left;
+    margin: 0 35px;
+    padding: 10px;
+    transition: transform .2s;
+}
+.d-flex:hover{
+    transform: scale(1.1)
+}

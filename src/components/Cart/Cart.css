@@ -1,0 +1,48 @@
+@media (min-width: 728px){
+    
+        #RowCard{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    
+}
+.descripcionCart{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    margin: 10px 280px;
+    border-radius: 10%;
+}
+
+
+.my-2{
+    padding: 10px;
+}
+.my-2 h3{
+    block-size: auto;
+}
+.my-2 h4{
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    border-radius: 30%;
+}
+
+.iconcarrito{
+    width: 63px;
+}
+.my-4{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    padding: 50px;
+}
+.formulario .btn{
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+#RowCard{
+    display: flex;
+    flex-direction: row;
+}
