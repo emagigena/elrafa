@@ -13,7 +13,7 @@ export default function inicio2() {
             <Card.Body>
                 <Card.Title>Monitores Amps Bafles y Sistemas de Audio</Card.Title>
                 <Card.Text>
-                Todo en Audio, para bandas, musica en vivo, producción musical, en Instrumental Santa Fe
+                Todo en Audio, para bandas, musica en vivo, producción musical, en elRafa Santa Fe
                 </Card.Text>
                 
             </Card.Body>

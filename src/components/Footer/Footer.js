@@ -19,7 +19,7 @@ const Footer = () => {
             <Col>
               <Row>
                 <Col className="text-center d-flex align-items-center justify-content-center">
-                  <h5 className="font-weight-bold">Cátalogo de productos de Instrumental Santa Fe</h5>
+                  <h5 className="font-weight-bold">Cátalogo de productos del Rafa Santa Fe</h5>
                   <p>En este sitio web podrás encontrar nuestro catálogo con gran cantidad de nuestro stock de productos y marcas.</p>
                 </Col>
                 <Col>
@@ -28,7 +28,7 @@ const Footer = () => {
                   <div><i className="bi bi-whatsapp"></i> WhatsApp: 342111111</div>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center">
-                  <h5>© Instrumental Santa Fe™</h5>
+                  <h5>© El Rafa Santa Fe™</h5>
                 </Col>
               </Row>
             </Col>
