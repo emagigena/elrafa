@@ -1,0 +1,10 @@
+.ItemDetailContainer{
+    display: inline-flex;
+    margin: auto;
+    text-align: center;
+    padding:1em;
+    display:block;
+    justify-content: center;
+    list-style: none;
+    height: auto;
+}
