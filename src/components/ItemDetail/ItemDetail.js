@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ItemDetail.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCounter";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../Context/CartContext";
@@ -50,9 +50,9 @@ export default function ItemDetail({ producto }) {
                 <ItemCount stock={producto.STOCK} initial={1} onAdd={onAdd} />
               ) : (
                 <Link to="/Cart">
-                  <button variant="primary" size="lg">
+                  <Button variant="primary" size="lg">
                     Comprar ahora
-                  </button>
+                  </Button>
                 </Link>
               )}
             </div>

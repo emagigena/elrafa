@@ -1,23 +1,43 @@
-@media (max-width: 1920px){
-    .row{
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    nav{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    ul{
-        width: 100%;
-    }
-
-}
 .Footer {
-    width: 100%;
-    background-color: #d40d0d;
+    background-color: #e40c0c;
+    padding: 30px 0;
+    font-family: "Montserrat";
+    font-weight: 500 !important;
+    color: white;
     text-align: center;
-    padding: 10px;
+  }
+  
+  .Footer img {
+    max-height: 90px;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-section h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 0;
+  }
+  
+  .footer-section svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+    margin-right: 12px;
+  }
+  
+  .Footer .text-center {
+    margin-top: 20px;
+  }
+  
+  .Footer .mt-4 {
+    margin-top: 40px;
   }
   

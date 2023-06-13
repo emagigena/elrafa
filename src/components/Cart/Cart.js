@@ -115,47 +115,52 @@ function Cart() {
                 </Button>
               </div>
             ) : (
-              <div className="my-4">
-                <h4>Carrito de compras:</h4>
+              <div className="my-1">
+                <h2>Carrito de compras:</h2>
                 <hr />
 
-                <Table responsive>
-                  <thead>
-                    <tr className="font-weight-bold">
-                      <th>Productos</th>
-                      <th>Precio</th>
-                      <th>Cantidad</th>
-                      <th>Subtotal</th>
-                      <th>Quitar del Carrito</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {cartList.map((item) => (
-                      <tr key={item.id} className="align-items-center">
-                        <td>
-                          <Image
-                            src={item.FOTOS[0]}
-                            rounded
-                            width={50}
-                            alt={item.NOMBRE}
-                          />
-                          {item.nombre}
-                        </td>
-                        <td>${item.PRECIO}</td>
-                        <td>Cantidad: {item.cantidad}</td>
-                        <td>${item.cantidad * item.PRECIO}</td>
-                        <td>
-                          <Button
-                            variant="danger"
-                            onClick={() => borrarItem(item.id)}
-                          >
-                            Quitar
-                          </Button>
-                        </td>
+                <div className="Cart">
+                  <Table responsive striped bordered hover>
+                    <thead>
+                      <tr className="font-weight-bold">
+                        <th>Productos</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Quitar del Carrito</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </Table>
+                    </thead>
+                    <tbody>
+                      {cartList.map((item) => (
+                        <tr key={item.id}>
+                          <td>
+                            <div className="ProductInfo">
+                              <Image
+                                src={item.FOTOS[0]}
+                                rounded
+                                width={50}
+                                alt={item.NOMBRE}
+                                className="ProductImage"
+                              />
+                              <span>{item.NOMBRE}</span>
+                            </div>
+                          </td>
+                          <td>${item.PRECIO}</td>
+                          <td>{item.cantidad}</td>
+                          <td>${item.cantidad * item.PRECIO}</td>
+                          <td>
+                            <Button
+                              variant="danger"
+                              onClick={() => borrarItem(item.id)}
+                            >
+                              Quitar
+                            </Button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </Table>
+                </div>
 
                 <hr />
                 <h2>Total: ${calcularTotal()}</h2>
@@ -167,7 +172,7 @@ function Cart() {
                       <Form.Label>Nombre</Form.Label>
                       <Form.Control
                         name="nombre"
-                        type="name"
+                        type="text"
                         placeholder="Ingrese su Nombre"
                         value={dataFormulario.nombre}
                         onChange={handleOnChange}
@@ -178,7 +183,7 @@ function Cart() {
                       <Form.Label>Apellido</Form.Label>
                       <Form.Control
                         name="apellido"
-                        type="lastname"
+                        type="text"
                         placeholder="Ingrese su Apellido"
                         value={dataFormulario.apellido}
                         onChange={handleOnChange}
@@ -200,7 +205,7 @@ function Cart() {
                       <Form.Label>Celular</Form.Label>
                       <Form.Control
                         name="telefono"
-                        type="phone"
+                        type="text"
                         placeholder="Ingrese su Teléfono"
                         value={dataFormulario.telefono}
                         onChange={handleOnChange}
@@ -211,7 +216,7 @@ function Cart() {
                       <Form.Label>Dirección</Form.Label>
                       <Form.Control
                         name="direccion"
-                        type="direcction"
+                        type="text"
                         placeholder="Ingrese su dirección"
                         value={dataFormulario.direccion}
                         onChange={handleOnChange}

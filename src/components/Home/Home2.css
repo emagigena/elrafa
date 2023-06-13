@@ -16,6 +16,9 @@
   .CardsInfo {
     width: 100%;
     float: none;
+    font-family: "Montserrat";
+    font-weight: 500 !important;
+    color: white;
   }
   .d-flex {
     display: flex;
@@ -31,9 +34,11 @@
 }
 
 h1 {
+  font-family: "Montserrat";
+  font-weight: 800 !important;
   color: white;
-  background-color: black;
 }
+
 .d-flex {
   float: left;
   padding: 10px;

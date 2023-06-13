@@ -32,29 +32,21 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <NavLink to="/CATEGORÍA/ARMERÍA" className="nav-link text-white">
-              ARMERÍA
+              <span>ARMERÍA</span>
             </NavLink>
             <NavLink to="/CATEGORÍA/NÁUTICA" className="nav-link text-white">
-              NÁUTICA
+              <span>NÁUTICA</span>
             </NavLink>
             <NavLink to="/CATEGORÍA/CAMPING" className="nav-link text-white">
-              CAMPING
+              <span>CAMPING</span>
             </NavLink>
             <NavLink to="/CATEGORÍA/PESCA" className="nav-link text-white">
-              PESCA
+              <span>PESCA</span>
             </NavLink>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
-          <Nav className="ml-auto">
-            <Nav.Link
-              className="text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/elrafaarmeriaynautica"
-            >
-              <i className="bi bi-facebook"></i> Página de Facebook
-            </Nav.Link>
+          <Nav style={{ textAlign: "center" }} className="ml-auto">
             <Cart number={productosAgregados()} />
           </Nav>
         </Navbar.Collapse>

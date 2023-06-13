@@ -16,6 +16,16 @@
   width: 100%;
   padding: 0;
 }
+.nav-link {
+  font-family: "Montserrat";
+  font-weight: 500 !important;
+  color: white;
+  text-align: center;
+}
+
+.nav-link:hover span {
+  color: rgb(0, 0, 0);
+}
 
 .NavLink {
   list-style: none;
@@ -31,6 +41,9 @@
 .Cart {
   /* background-color: rgb(233, 17, 17); */
   padding: 0;
+  font-family: "Montserrat";
+  font-weight: 500 !important;
+  color: white;
 }
 
 .me-auto a {
