@@ -31,17 +31,17 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <NavLink to="/categoria/armas" className="nav-link text-white">
-              Armas
+            <NavLink to="/CATEGORÍA/ARMERÍA" className="nav-link text-white">
+              ARMERÍA
             </NavLink>
-            <NavLink to="/categoria/nautica" className="nav-link text-white">
-              Náutica
+            <NavLink to="/CATEGORÍA/NÁUTICA" className="nav-link text-white">
+              NÁUTICA
             </NavLink>
-            <NavLink to="/categoria/camping" className="nav-link text-white">
-              Camping
+            <NavLink to="/CATEGORÍA/CAMPING" className="nav-link text-white">
+              CAMPING
             </NavLink>
-            <NavLink to="/categoria/pesca" className="nav-link text-white">
-              Pesca
+            <NavLink to="/CATEGORÍA/PESCA" className="nav-link text-white">
+              PESCA
             </NavLink>
           </Nav>
         </Navbar.Collapse>

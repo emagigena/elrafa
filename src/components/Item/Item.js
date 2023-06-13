@@ -9,10 +9,10 @@ function Item ( {prod} ) {
     return(
     <li>
         <Card className='card1'>
-            <ShowCarousel fotos={prod.fotos}/>
+            <ShowCarousel fotos={prod.FOTOS}/>
             <Card.Body>
-                <Card.Title className='ProductName'>{prod.nombre}</Card.Title>
-                <Card.Title>$ {prod.precio}</Card.Title>
+                <Card.Title className='ProductName'>{prod.NOMBRE}</Card.Title>
+                <Card.Title>$ {prod.PRECIO}</Card.Title>
                 <Link to={`/detalle/${prod.id}`}>
                     <Button variant="primary">Ver el detalle</Button>
                 </Link>

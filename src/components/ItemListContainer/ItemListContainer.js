@@ -19,17 +19,17 @@ export default function ItemListContainer() {
 
   useEffect(() => {
     const db = getFirestore();
-    const queryDb = collection(db, "productos");
-
+    const queryDb = collection(db, "PRODUCTOS");
     const queryAFiltrar = categoriaID
-      ? query(queryDb, where("categoria", "==", categoriaID))
+      ? query(queryDb, where("CATEGORÍA", "==", categoriaID))
       : queryDb;
-
+    console.log(queryDb);
     getDocs(queryAFiltrar)
       .then((respuesta) => {
         setProductos(
           respuesta.docs.map((item) => ({ id: item.id, ...item.data() }))
-        );
+          );
+
       })
       .catch((error) => {
         console.log(error);

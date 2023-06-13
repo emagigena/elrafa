@@ -39,23 +39,23 @@ function Cart() {
     if (Object.values(dataFormulario).some((value) => value === "")) {
       alert("Todos los campos son requeridos");
     } else {
-      let orden = {};
-      orden.comprador = dataFormulario;
-      orden.total = calcularTotal();
-      orden.items = cartList.map((cartItem) => {
+      let ORDEN = {};
+      ORDEN.COMPRADOR = dataFormulario;
+      ORDEN.TOTAL = calcularTotal();
+      ORDEN.ITEM = cartList.map((cartItem) => {
         const id = cartItem.id;
-        const nombre = cartItem.nombre;
-        const precio = cartItem.precio;
+        const nombre = cartItem.NOMBRE;
+        const precio = cartItem.PRECIO;
         return { id, nombre, precio };
       });
       const db = getFirestore();
-      const queryOrdenes = collection(db, "orden");
-      addDoc(queryOrdenes, orden)
+      const queryOrdenes = collection(db, "ORDEN");
+      addDoc(queryOrdenes, ORDEN)
         .then((res) => setIdOrden(res.id))
         .catch((err) => console.log(err))
         .finally(() => vaciarCart());
 
-      const queryProductos = collection(db, "productos");
+      const queryProductos = collection(db, "PRODUCTOS");
 
       const queryProductosFillter = query(
         queryProductos,
@@ -73,7 +73,7 @@ function Cart() {
           resp.docs.forEach((res) =>
             batch.update(res.ref, {
               stock:
-                res.data().stock -
+                res.data().STOCK -
                 cartList.find((item) => item.id === res.id).cantidad,
             })
           )
@@ -134,16 +134,16 @@ function Cart() {
                       <tr key={item.id} className="align-items-center">
                         <td>
                           <Image
-                            src={item.fotos[0]}
+                            src={item.FOTOS[0]}
                             rounded
                             width={50}
-                            alt={item.nombre}
+                            alt={item.NOMBRE}
                           />
                           {item.nombre}
                         </td>
-                        <td>${item.precio}</td>
+                        <td>${item.PRECIO}</td>
                         <td>Cantidad: {item.cantidad}</td>
-                        <td>${item.cantidad * item.precio}</td>
+                        <td>${item.cantidad * item.PRECIO}</td>
                         <td>
                           <Button
                             variant="danger"

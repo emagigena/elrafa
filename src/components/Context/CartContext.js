@@ -20,7 +20,7 @@ const CartContext = createContext([])
     const calcularTotal = () => {
         let suma = 0;
         cartList.forEach(element => {
-            suma += element.cantidad * element.precio;
+            suma += element.cantidad * element.PRECIO;
         });
         return suma
    }
