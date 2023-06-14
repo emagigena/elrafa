@@ -7,7 +7,7 @@ export default function Home2() {
   return (
     <div className="CardsInfo">
       <div className="d-flex">
-        <Card className="cards" style={{ width: "18rem" }}>
+        <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/18-2_iijsda.jpg"
@@ -25,7 +25,7 @@ export default function Home2() {
         </Card>
       </div>
       <div className="d-flex">
-        <Card className="cards" style={{ width: "18rem" }}>
+        <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/19-1_s3wqsf.jpg"
@@ -43,7 +43,7 @@ export default function Home2() {
       </div>
 
       <div className="d-flex">
-        <Card className="cards" style={{ width: "18rem" }}>
+        <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/20-2_v5qp0p.jpg"
@@ -51,8 +51,7 @@ export default function Home2() {
           <Card.Body>
             <Card.Title>Camping</Card.Title>
             <Card.Text>
-              Equípate con nuestras mejores opciones de camping, tiendas de
-              campaña, sacos de dormir y más.
+              Equípate con nuestras mejores opciones de camping, carpas, sacos de dormir y más.
             </Card.Text>
             <Link to="/CATEGORÍA/CAMPING" className="btn btn-primary">
               Ver productos
@@ -61,7 +60,7 @@ export default function Home2() {
         </Card>
       </div>
       <div className="d-flex">
-        <Card className="cards" style={{ width: "18rem" }}>
+        <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/2-1_qo3tj5.jpg"
@@ -69,8 +68,8 @@ export default function Home2() {
           <Card.Body>
             <Card.Title>Pesca</Card.Title>
             <Card.Text>
-              Descubre nuestra selección de cañas, carretes, señuelos y todo lo
-              que necesitas para pescar.
+              Descubre nuestra selección de cañas, reels, señuelos y todo lo
+              que necesitas.
             </Card.Text>
             <Link to="/CATEGORÍA/PESCA" className="btn btn-primary">
               Ver productos
