@@ -90,18 +90,21 @@ function Cart() {
     <>
       <Container>
         {compraTerminada ? (
-          <div>
-            <h3>{dataFormulario.nombre}</h3>
-            <h3>Gracias por comprar en Instrumental Santa Fe</h3>
-            <h3>
-              El Envío se realizará a la dirección: {dataFormulario.direccion}
-            </h3>
-            <h3>El codigo de su compra es: </h3>
-            <h4>{idOrden}</h4>
-            <Button className="btn btn-success" onClick={() => navegar("/")}>
-              Volver al Inicio
-            </Button>
-          </div>
+          <Container>
+            <div style={{ textAlign: "center", margin: "30px" }}>
+              <h3>{dataFormulario.nombre}</h3>
+              <h3>Gracias por comprar en el Rafa</h3>
+              <h3>
+                Pronto nos comunicaremos con usted para coordinar el envío a{" "}
+                {dataFormulario.direccion}
+              </h3>
+              <h3>El codigo de su compra es: </h3>
+              <h4>{idOrden}</h4>
+              <Button className="btn btn-success" onClick={() => navegar("/")}>
+                Volver al Inicio
+              </Button>
+            </div>
+          </Container>
         ) : (
           <Container className="my-4 bg-white text-center">
             {productosAgregados() === 0 ? (
