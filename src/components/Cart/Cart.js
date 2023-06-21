@@ -169,7 +169,7 @@ function Cart() {
                 <h2>Total: ${calcularTotal()}</h2>
 
                 <div className="formulario">
-                  <h2>Formulario de Compra:</h2>
+                  <h2>Formulario de Pedido:</h2>
                   <Form onSubmit={generarOrden}>
                     <Form.Group>
                       <Form.Label>Nombre</Form.Label>
@@ -231,7 +231,7 @@ function Cart() {
                       className="btn btn-success"
                       type="submit"
                     >
-                      Finalizar la compra
+                      Finalizar el pedido
                     </Button>
                   </Form>
 

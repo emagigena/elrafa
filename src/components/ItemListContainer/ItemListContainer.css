@@ -1,21 +1,22 @@
 .ItemsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
 
-  .ItemsContainer li {
-    margin: 1em;
-    padding: 1em;
-    list-style: none;
-    background-color: #f7f7f7;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-  }
+.ItemsContainer li {
+  margin: 1em;
+  padding: 1em;
+  list-style: none;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
 
-  .ItemsContainer img {
-    max-width: 100%;
-    height: auto;
-  }
+.ItemsContainer img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}

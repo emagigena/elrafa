@@ -12,9 +12,10 @@
   
   .ImageContainer img {
     width: auto;
-    max-height: auto;
+    max-height: 500px;
     object-fit: cover;
     margin-bottom: 1em;
+    border-radius: 10px;
   }
   
   .PhotoList {

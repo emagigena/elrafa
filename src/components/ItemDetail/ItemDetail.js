@@ -42,7 +42,7 @@ export default function ItemDetail({ producto }) {
               <h2 className="ProductName">{producto.NOMBRE}</h2>
               <h3>$ {producto.PRECIO}</h3>
               <p>
-                Este es un producto de nuestra página web. Para comprar, canjear
+                Este es un producto de nuestra página web. Para pedir, canjear
                 o consultar, por favor envía un mensaje de WhatsApp al siguiente
                 número: 342111111111. ¡Gracias!
               </p>
@@ -51,7 +51,7 @@ export default function ItemDetail({ producto }) {
               ) : (
                 <Link to="/Cart">
                   <Button variant="primary" size="lg">
-                    Comprar ahora
+                    Pedir ahora
                   </Button>
                 </Link>
               )}

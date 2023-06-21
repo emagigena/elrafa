@@ -34,7 +34,7 @@ export default function ItemCount({ stock, initial, onAdd }) {
             onAdd(count);
           }}
         >
-          Agregar al carrito
+          Agregar al Pedido
         </Button>
       </div>
     </div>

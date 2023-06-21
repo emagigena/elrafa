@@ -43,6 +43,9 @@ export default function NavBar() {
             <NavLink to="/CATEGORÍA/PESCA" className="nav-link text-white">
               <span>PESCA</span>
             </NavLink>
+            <NavLink to="/" className="nav-link text-white">
+              <span>CONTACTANOS</span>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
