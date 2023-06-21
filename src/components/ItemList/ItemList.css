@@ -1,7 +1,36 @@
-.ItemList{
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    height: auto;
+.ItemList {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  height: auto;
+}
+
+.filters {
+  width: auto;
+  margin: 25px;
+  display: block;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+.filter input,
+.filter select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  margin: 0.5em;
 }

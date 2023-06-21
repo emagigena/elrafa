@@ -42,9 +42,9 @@ export default function ItemDetail({ producto }) {
               <h2 className="ProductName">{producto.NOMBRE}</h2>
               <h3>$ {producto.PRECIO}</h3>
               <p>
-                Este es un producto de nuestra página web. Para pedir, canjear
-                o consultar, por favor envía un mensaje de WhatsApp al siguiente
-                número: 342111111111. ¡Gracias!
+                {producto.DESCRIPCION
+                  ? producto.DESCRIPCION
+                  : "Este es un producto de nuestra página web. Para pedir, canjear o consultar, por favor envía un mensaje de WhatsApp al siguiente número: 342111111111. ¡Gracias!"}
               </p>
               {state ? (
                 <ItemCount stock={producto.STOCK} initial={1} onAdd={onAdd} />
