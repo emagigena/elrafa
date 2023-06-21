@@ -7,10 +7,10 @@ export default function Home2() {
   return (
     <div className="CardsInfo">
       <div className="d-flex">
-        <Card className="cards" style={{ width: "16rem" }}>
+        <Card className="cards" style={{ width: "16rem"}}>
           <Card.Img
             variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/18-2_iijsda.jpg"
+            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361643/el%20rafa/slides%20home/tpzjroajzmdeuzavvxn8.png"
           />
           <Card.Body>
             <Card.Title>Armeria</Card.Title>
@@ -28,7 +28,7 @@ export default function Home2() {
         <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/19-1_s3wqsf.jpg"
+            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/xps45gn51spjf7riutcz.png"
           />
           <Card.Body>
             <Card.Title>Nautica</Card.Title>
@@ -46,7 +46,7 @@ export default function Home2() {
         <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/20-2_v5qp0p.jpg"
+            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/dfoblc8np68ttl4kcuiz.png"
           />
           <Card.Body>
             <Card.Title>Camping</Card.Title>
@@ -63,7 +63,7 @@ export default function Home2() {
         <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1686608029/el%20rafa/2-1_qo3tj5.jpg"
+            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/ikodc4jcjqpl2wkzlekj.png"
           />
           <Card.Body>
             <Card.Title>Pesca</Card.Title>
