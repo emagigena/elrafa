@@ -33,7 +33,8 @@ const Contact = () => {
                       }?text=${encodeURIComponent(message)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-primary"
+                      className="btn"
+                      style={{ backgroundColor: "red", color: "white" }}
                     >
                       Contactar por WhatsApp
                     </a>

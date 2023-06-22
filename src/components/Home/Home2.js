@@ -18,7 +18,7 @@ export default function Home2() {
               Descubre nuestra selección de armas de calidad para tus
               actividades de caza y tiro.
             </Card.Text>
-            <Link to="/CATEGORÍA/ARMERÍA" className="btn btn-primary">
+            <Link to="/CATEGORÍA/ARMERÍA" className="btn" style={{backgroundColor: "red", color: "white"}}>
               Ver productos
             </Link>
           </Card.Body>
@@ -36,7 +36,7 @@ export default function Home2() {
               Embarcaciones, Aceites, Motores Kayaks y accesorios para
               navegación.
             </Card.Text>
-            <Link to="/CATEGORÍA/NÁUTICA" className="btn btn-primary">
+            <Link to="/CATEGORÍA/NÁUTICA" className="btn" style={{backgroundColor: "red", color: "white"}}>
               Ver productos
             </Link>
           </Card.Body>
@@ -55,7 +55,7 @@ export default function Home2() {
               Equípate con nuestras mejores opciones de camping, carpas, sacos
               de dormir y más.
             </Card.Text>
-            <Link to="/CATEGORÍA/CAMPING" className="btn btn-primary">
+            <Link to="/CATEGORÍA/CAMPING" className="btn" style={{backgroundColor: "red", color: "white"}}>
               Ver productos
             </Link>
           </Card.Body>
@@ -73,7 +73,7 @@ export default function Home2() {
               Descubre nuestra selección de cañas, reels, señuelos y todo lo que
               necesitas.
             </Card.Text>
-            <Link to="/CATEGORÍA/PESCA" className="btn btn-primary">
+            <Link to="/CATEGORÍA/PESCA" className="btn" style={{backgroundColor: "red", color: "white"}}>
               Ver productos
             </Link>
           </Card.Body>

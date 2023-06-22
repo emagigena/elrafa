@@ -14,7 +14,7 @@ function Item ( {prod} ) {
                 <Card.Title className='ProductName'>{prod.NOMBRE}</Card.Title>
                 <Card.Title>$ {prod.PRECIO}</Card.Title>
                 <Link to={`/detalle/${prod.id}`}>
-                    <Button variant="primary">Ver el detalle</Button>
+                    <Button variant="none" className="btn" style={{backgroundColor: "red", color: "white"}}>Ver Detalle</Button>
                 </Link>
             </Card.Body>
         </Card>

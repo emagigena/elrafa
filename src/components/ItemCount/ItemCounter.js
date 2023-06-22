@@ -28,7 +28,8 @@ export default function ItemCount({ stock, initial, onAdd }) {
       </div>
       <div className="d-grip gap-2">
         <Button
-          variant="outline-primary"
+          variant="outline-none"
+          className="btn" style={{backgroundColor: "red", color: "white"}}
           size="lg"
           onClick={(event) => {
             onAdd(count);

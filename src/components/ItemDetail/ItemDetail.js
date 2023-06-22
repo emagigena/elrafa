@@ -50,7 +50,12 @@ export default function ItemDetail({ producto }) {
                 <ItemCount stock={producto.STOCK} initial={1} onAdd={onAdd} />
               ) : (
                 <Link to="/Cart">
-                  <Button variant="primary" size="lg">
+                  <Button
+                    variant="none"
+                    className="btn"
+                    style={{ backgroundColor: "red", color: "white" }}
+                    size="lg"
+                  >
                     Pedir ahora
                   </Button>
                 </Link>
