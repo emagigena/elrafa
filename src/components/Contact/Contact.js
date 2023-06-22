@@ -1,9 +1,10 @@
 import React from "react";
-import { Card, Carousel, Col, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import contactos from "./contact.json";
 import "./Contact.css";
-const message = `¡Hola!, me gustaría realizar una consulta, espero su respuesta con paciencia, muchas gracias`
+
 const Contact = () => {
+  const message = `¡Hola!, me gustaría realizar una consulta, espero su respuesta con paciencia, muchas gracias`;
   return (
     <div className="contact-container">
       <Row xs={1} md={2} className="g-4 rowClass justify-content-center">
@@ -14,25 +15,16 @@ const Contact = () => {
           return (
             <Col key={idx} className="col-lg-3">
               <Card className="contact-card">
-                <Carousel interval={3000} pause={false}>
-                  <Carousel.Item>
-                    <Card.Img
-                      src={datosContacto.img[0]}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <Card.Img
-                      src={datosContacto.img[1]}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </Carousel.Item>
-                </Carousel>
+                <Card.Img
+                  src={datosContacto.img[0]}
+                  style={{ objectFit: "contain" }}
+                />
                 <Card.Body>
                   <Card.Title>{datosContacto.nombre}</Card.Title>
-                  <Card.Text>Teléfono: {datosContacto.telefono}</Card.Text>
                   <a
-                    href={`https://wa.me/${datosContacto.telefono}?text=${encodeURIComponent(message)}`}
+                    href={`https://wa.me/${
+                      datosContacto.telefono
+                    }?text=${encodeURIComponent(message)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary"
