@@ -14,6 +14,7 @@ import {
   query,
 } from "firebase/firestore";
 import Footer from "../Footer/Footer";
+import IrWhatsapp from "../irWhatsapp/IrWhatsapp";
 
 function Cart() {
   const [compraTerminada, setCompraTerminada] = useState(false);
@@ -21,7 +22,6 @@ function Cart() {
   const [dataFormulario, setDataFormulario] = useState({
     nombre: "",
     apellido: "",
-    email: "",
     telefono: "",
     direccion: "",
   });
@@ -82,9 +82,21 @@ function Cart() {
       window.scroll(1, 1);
     }
   };
+
   const handleOnChange = (e) => {
     setDataFormulario({ ...dataFormulario, [e.target.name]: e.target.value });
   };
+
+  // const contactarVentas = () => {
+  //   const productosInfo = cartList.map(
+  //     (item) => `${item.NOMBRE} - ${item.cantidad}`
+  //   );
+  //   const message = `Mis Nombre: ${
+  //     dataFormulario.nombre
+  //   }, Mi numero de orden es: ${idOrden}, Estoy interesado por: ${productosInfo.join()}`;
+  //   const url = `https://wa.me/3425152705?text=${encodeURIComponent(message)}`;
+  //   window.open(url, "_blank");
+  // };
 
   return (
     <>
@@ -100,7 +112,7 @@ function Cart() {
               </h3>
               <h3>El codigo de su compra es: </h3>
               <h4>{idOrden}</h4>
-              <Button className="btn btn-success" onClick={() => navegar("/")}>
+              <Button className="btn btn-warning" onClick={() => navegar("/")}>
                 Volver al Inicio
               </Button>
             </div>
@@ -194,17 +206,6 @@ function Cart() {
                     </Form.Group>
 
                     <Form.Group>
-                      <Form.Label>Correo electrónico</Form.Label>
-                      <Form.Control
-                        name="email"
-                        type="email"
-                        placeholder="Ingrese su email"
-                        value={dataFormulario.email}
-                        onChange={handleOnChange}
-                      />
-                    </Form.Group>
-
-                    <Form.Group>
                       <Form.Label>Celular</Form.Label>
                       <Form.Control
                         name="telefono"
@@ -225,14 +226,26 @@ function Cart() {
                         onChange={handleOnChange}
                       />
                     </Form.Group>
-
-                    <Button
+                    <Container style={{ marginTop: "10px" }}>
+                      {Object.values(dataFormulario).some(
+                        (value) => value !== ""
+                      ) ? (
+                        <IrWhatsapp
+                          cartList={cartList}
+                          dataFormulario={dataFormulario}
+                          generarOrden={generarOrden}
+                        />
+                      ) : (
+                        ""
+                      )}
+                    </Container>
+                    {/* <Button
                       onClick={generarOrden}
                       className="btn btn-success"
                       type="submit"
                     >
                       Finalizar el pedido
-                    </Button>
+                    </Button> */}
                   </Form>
 
                   <Button onClick={vaciarCart} className="btn btn-danger">
