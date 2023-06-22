@@ -87,17 +87,6 @@ function Cart() {
     setDataFormulario({ ...dataFormulario, [e.target.name]: e.target.value });
   };
 
-  // const contactarVentas = () => {
-  //   const productosInfo = cartList.map(
-  //     (item) => `${item.NOMBRE} - ${item.cantidad}`
-  //   );
-  //   const message = `Mis Nombre: ${
-  //     dataFormulario.nombre
-  //   }, Mi numero de orden es: ${idOrden}, Estoy interesado por: ${productosInfo.join()}`;
-  //   const url = `https://wa.me/3425152705?text=${encodeURIComponent(message)}`;
-  //   window.open(url, "_blank");
-  // };
-
   return (
     <>
       <Container>

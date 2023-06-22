@@ -22,7 +22,6 @@ function ItemList({ productos }) {
     setOrden(event.target.value);
   };
 
-  // Obtener las opciones de marca únicas de los productos
   const marcas = [...new Set(productos.map((prod) => prod.MARCA))];
 
   const filteredProductos = productos

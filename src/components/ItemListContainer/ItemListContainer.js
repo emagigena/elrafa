@@ -23,13 +23,11 @@ export default function ItemListContainer() {
     const queryAFiltrar = categoriaID
       ? query(queryDb, where("CATEGORÍA", "==", categoriaID))
       : queryDb;
-    console.log(queryDb);
     getDocs(queryAFiltrar)
       .then((respuesta) => {
         setProductos(
           respuesta.docs.map((item) => ({ id: item.id, ...item.data() }))
-          );
-
+        );
       })
       .catch((error) => {
         console.log(error);
