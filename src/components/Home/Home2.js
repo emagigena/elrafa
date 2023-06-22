@@ -7,7 +7,7 @@ export default function Home2() {
   return (
     <div className="CardsInfo">
       <div className="d-flex">
-        <Card className="cards" style={{ width: "16rem"}}>
+        <Card className="cards" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361643/el%20rafa/slides%20home/tpzjroajzmdeuzavvxn8.png"
@@ -33,7 +33,8 @@ export default function Home2() {
           <Card.Body>
             <Card.Title>Nautica</Card.Title>
             <Card.Text>
-              Embarcaciones, Aceites, Motores Kayaks y accesorios para navegación.
+              Embarcaciones, Aceites, Motores Kayaks y accesorios para
+              navegación.
             </Card.Text>
             <Link to="/CATEGORÍA/NÁUTICA" className="btn btn-primary">
               Ver productos
@@ -51,7 +52,8 @@ export default function Home2() {
           <Card.Body>
             <Card.Title>Camping</Card.Title>
             <Card.Text>
-              Equípate con nuestras mejores opciones de camping, carpas, sacos de dormir y más.
+              Equípate con nuestras mejores opciones de camping, carpas, sacos
+              de dormir y más.
             </Card.Text>
             <Link to="/CATEGORÍA/CAMPING" className="btn btn-primary">
               Ver productos
@@ -68,8 +70,8 @@ export default function Home2() {
           <Card.Body>
             <Card.Title>Pesca</Card.Title>
             <Card.Text>
-              Descubre nuestra selección de cañas, reels, señuelos y todo lo
-              que necesitas.
+              Descubre nuestra selección de cañas, reels, señuelos y todo lo que
+              necesitas.
             </Card.Text>
             <Link to="/CATEGORÍA/PESCA" className="btn btn-primary">
               Ver productos

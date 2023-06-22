@@ -55,9 +55,9 @@ const productos = [
 
 
 const GetPage = new Promise( (resolve, reject) => {
-  let url = 'instrumentalsantafe.com'
+  let url = 'elrafa.com'
 
-    if (url === 'instrumentalsantafe.com'){
+    if (url === 'elrafa.com'){
         setTimeout(() => {
             resolve(productos)
         },3000 )

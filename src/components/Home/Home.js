@@ -8,7 +8,7 @@ const Home = () => {
       className="section hero-section custom-section w-full"
       style={{
         backgroundImage:
-          'url("https://res.cloudinary.com/dhrfu31jp/image/upload/v1686607178/el%20rafa/Dise%C3%B1o_sin_t%C3%ADtulo_q9w2a6.png")',
+          'url("https://res.cloudinary.com/dhrfu31jp/image/upload/v1687436634/el%20rafa/slides%20home/1_tf2dym.png")',
         width: "100%",
         height: "500px",
         backgroundSize: "cover",

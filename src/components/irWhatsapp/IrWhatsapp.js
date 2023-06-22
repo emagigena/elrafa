@@ -19,7 +19,7 @@ const IrWhatsapp = ({ cartList, dataFormulario, generarOrden }) => {
       className="section hero-section custom-section w-full"
       style={{
         backgroundImage:
-          'url("https://res.cloudinary.com/dhrfu31jp/image/upload/v1687382940/el%20rafa/slides%20home/imgfinal_dsvqnb.png")',
+          'url("https://res.cloudinary.com/dhrfu31jp/image/upload/v1687436633/el%20rafa/slides%20home/2_uwhk57.png")',
         // minHeight: "100vh",
         width: "100%",
         height: "300px",

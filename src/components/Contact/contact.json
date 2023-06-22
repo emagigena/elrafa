@@ -1,0 +1,42 @@
+[
+  {
+    "armeria": {
+      "nombre": "Leo",
+      "telefono": 3425152705,
+      "img": [
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687451237/el%20rafa/empleados/4_wh57qa.png",
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361643/el%20rafa/slides%20home/tpzjroajzmdeuzavvxn8.png"
+      ]
+    }
+  },
+  {
+    "pesca": {
+      "nombre": "Guille",
+      "telefono": 3424771704,
+      "img": [
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687451242/el%20rafa/empleados/10_f5l5k9.png",
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/ikodc4jcjqpl2wkzlekj.png"
+      ]
+    }
+  },
+  {
+    "nautica": {
+      "nombre": "Charly Jr",
+      "telefono": 3425069128,
+      "img": [
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687451243/el%20rafa/empleados/6_juhdkv.png",
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/xps45gn51spjf7riutcz.png"
+      ]
+    }
+  },
+  {
+    "camping y pesca": {
+      "nombre": "Charly",
+      "telefono": 3425347395,
+      "img": [
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687451241/el%20rafa/empleados/8_ay9qzk.png",
+        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/dfoblc8np68ttl4kcuiz.png"
+      ]
+    }
+  }
+]
