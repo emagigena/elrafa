@@ -11,13 +11,13 @@
 }
 .carousell img{
     justify-content: center;
-    width:400px;
+     width: 250px;
     height: 400px;
     text-align: center;
 }
 
 .carousell{
     justify-content: center;
-    width: 400px;
+    width: 249px;
     background-color: rgb(0, 0, 0);
 }
