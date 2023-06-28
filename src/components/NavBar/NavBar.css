@@ -6,6 +6,9 @@
 
 .ContainerNavbar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   background: linear-gradient(
     45deg,
     rgb(65, 18, 16),
@@ -17,6 +20,7 @@
   padding: 0;
 }
 .nav-link {
+  margin-left: 10px;
   font-family: "Montserrat";
   font-weight: 500 !important;
   color: white;
@@ -24,6 +28,7 @@
 }
 
 .nav-link:hover span {
+  transition: 0.5s;
   color: rgb(0, 0, 0);
 }
 

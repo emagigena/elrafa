@@ -252,7 +252,7 @@ function Cart() {
           </Container>
         )}
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

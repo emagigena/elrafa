@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ItemDetail.css";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Badge } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCounter";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../Context/CartContext";
@@ -26,6 +26,14 @@ export default function ItemDetail({ producto }) {
       <Container>
         <Row>
           <Col>
+            {producto.STOCK > 0 ? (
+          <div style={{display: "flex", justifyContent: "space-between" }}>
+            <Badge>EN STOCK</Badge>
+            <Badge bg="success">¡OFERTA!</Badge>
+          </div>
+        ) : (
+          ""
+        )}
             <div className="ImageContainer">
               <img src={foto} alt="Foto principal" />
               <ul className="PhotoList">

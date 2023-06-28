@@ -19,7 +19,7 @@ export default function HomeContainer() {
           <Home3/>
         </li>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

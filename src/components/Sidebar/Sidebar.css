@@ -1,0 +1,26 @@
+.item-list-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f7f7f7;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 10);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 80vh;
+  }
+
+
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+

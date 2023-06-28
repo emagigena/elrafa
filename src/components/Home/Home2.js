@@ -1,100 +1,42 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import "./Home2.css";
 import { Link } from "react-router-dom";
+import home2 from "./home2.json";
 
 export default function Home2() {
   return (
-    <div className="CardsInfo">
-      <div className="d-flex">
-        <Card className="cards" style={{ width: "20rem" }}>
-          <Card.Img
-            variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361643/el%20rafa/slides%20home/tpzjroajzmdeuzavvxn8.png"
-          />
-          <Card.Body>
-            <Card.Title>Armeria</Card.Title>
-            <Card.Text>
-              Descubre nuestra selección de armas de calidad para tus
-              actividades de caza y tiro.
-            </Card.Text>
-            <Link
-              to="/CATEGORÍA/ARMERÍA"
-              className="btn"
-              style={{ backgroundColor: "red", color: "white" }}
-            >
-              Ver productos
-            </Link>
-          </Card.Body>
-        </Card>
-      </div>
-      <div className="d-flex">
-        <Card className="cards" style={{ width: "20rem" }}>
-          <Card.Img
-            variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/xps45gn51spjf7riutcz.png"
-          />
-          <Card.Body>
-            <Card.Title>Nautica</Card.Title>
-            <Card.Text>
-              Embarcaciones, Aceites, Motores Kayaks y accesorios para
-              navegación.
-            </Card.Text>
-            <Link
-              to="/CATEGORÍA/NÁUTICA"
-              className="btn"
-              style={{ backgroundColor: "red", color: "white" }}
-            >
-              Ver productos
-            </Link>
-          </Card.Body>
-        </Card>
-      </div>
+    <Container>
+      <div className="contact-container">
+        <Row xs={1} md={2} className="g-4 rowClass justify-content-center">
+          {home2.map((areas, idx) => {
+            const tipoContacto = Object.keys(areas)[0];
+            const area = areas[tipoContacto];
 
-      <div className="d-flex">
-        <Card className="cards" style={{ width: "20rem" }}>
-          <Card.Img
-            variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/dfoblc8np68ttl4kcuiz.png"
-          />
-          <Card.Body>
-            <Card.Title>Camping</Card.Title>
-            <Card.Text>
-              Equípate con nuestras mejores opciones de camping, carpas, sacos
-              de dormir y más.
-            </Card.Text>
-            <Link
-              to="/CATEGORÍA/CAMPING"
-              className="btn"
-              style={{ backgroundColor: "red", color: "white" }}
-            >
-              Ver productos
-            </Link>
-          </Card.Body>
-        </Card>
+            return (
+              <Col key={idx} className="col-lg-3">
+                <Card className="contact-card">
+                  <Card.Img
+                    src={area.img[0]}
+                    style={{ objectFit: "contain" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>{area.nombre}</Card.Title>
+                    <Card.Text>{area.text}</Card.Text>
+                    <Link
+                      to={area.to}
+                      className="btn"
+                      style={{ backgroundColor: "red", color: "white" }}
+                    >
+                      Ver productos
+                    </Link>
+                  </Card.Body>
+                </Card>
+              </Col>
+            );
+          })}
+        </Row>
       </div>
-      <div className="d-flex">
-        <Card className="cards" style={{ width: "20rem" }}>
-          <Card.Img
-            variant="top"
-            src="https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/ikodc4jcjqpl2wkzlekj.png"
-          />
-          <Card.Body>
-            <Card.Title>Pesca</Card.Title>
-            <Card.Text>
-              Descubre nuestra selección de cañas, reels, señuelos y todo lo que
-              necesitas.
-            </Card.Text>
-            <Link
-              to="/CATEGORÍA/PESCA"
-              className="btn"
-              style={{ backgroundColor: "red", color: "white" }}
-            >
-              Ver productos
-            </Link>
-          </Card.Body>
-        </Card>
-      </div>
-    </div>
+    </Container>
   );
 }

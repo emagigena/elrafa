@@ -7,6 +7,7 @@ import Cart from "./components/Cart/Cart";
 import CartContextProvider from "./components/Context/CartContext";
 import HomeContainer from "./components/Home/HomeContainer";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             }
             {<Route path={"/contacto"} element={<Contact />} />}
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </CartContextProvider>
     </>

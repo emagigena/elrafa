@@ -4,7 +4,7 @@ import contactos from "./contact.json";
 import "./Contact.css";
 
 const Contact = () => {
-  const message = `¡Hola!, me gustaría realizar una consulta, espero su respuesta con paciencia, muchas gracias`;
+  const message = `¡Hola!, me gustaría realizar una consulta desde la pagina web, espero su respuesta con paciencia, muchas gracias`;
   return (
     <>
       <div style={{ marginTop: "40px" }}>

@@ -20,7 +20,7 @@ const Footer = () => {
         <h5 className="font-weight-bold">El Rafa Armeria y Náutica</h5>
       </div>
       <h5 className="font-weight-bold">Contáctanos</h5>
-      <flex>
+      <div>
         <div className="footer-section">
           <div style={{ margin: "10px" }}>
             <a style={{color: "white"}} href="https://www.facebook.com/armeriaynauticaelrafa/">
@@ -29,7 +29,7 @@ const Footer = () => {
                 width="26"
                 height="26"
                 fill="currentColor"
-                class="bi bi-facebook"
+                className="bi bi-facebook"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "12px" }}
               >
@@ -44,7 +44,7 @@ const Footer = () => {
                 width="26"
                 height="26"
                 fill="currentColor"
-                class="bi bi-instagram"
+                className="bi bi-instagram"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "12px" }}
               >
@@ -59,7 +59,7 @@ const Footer = () => {
               width="26"
               height="26"
               fill="currentColor"
-              class="bi bi-whatsapp"
+              className="bi bi-whatsapp"
               viewBox="0 0 16 16"
               style={{ marginRight: "12px" }}
             >
@@ -68,7 +68,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </flex>
+      </div>
 
       <div className="footer-section" style={{ marginTop: "20px" }}>
         <h5>© El Rafa™</h5>

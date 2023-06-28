@@ -1,51 +1,64 @@
-@media (max-width: 728px) {
-  .CardsInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    justify-content: center
-  }
-  .d-flex {
-    float: none;
-  }
-  li {
-    align-items: center;
-  }
-}
-@media (min-width: 728px) {
-  .CardsInfo {
-    width: auto;
-    float: none;
-    font-family: "Montserrat";
-    font-weight: 500 !important;
-    color: white;
-  }
-  .d-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    float: none;
-    width: auto;
-  }
-}
-
-.cards {
-  z-index: 99;
-}
-
-h1 {
-  font-family: "Montserrat";
-  font-weight: 800 !important;
-  color: white;
-}
-
-.d-flex {
-  float: left;
-  padding: 10px;
+.contact-card:hover {
+  transform: translateY(-5px);
   transition: transform 0.1s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 10);
 }
-.d-flex:hover {
-  transform: scale(1.05);
+
+.rowClass {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-card {
+  width: 20rem;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Ajusta la altura según tus necesidades */
+}
+@media screen and (max-width: 1375px) {
+  .contact-container {
+    /* Agrega tus estilos específicos para móvil aquí */
+    /* Por ejemplo, puedes cambiar la altura o el padding */
+    min-height: 50vh;
+    display: block;
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+  .contact-card {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 1195px) {
+  .contact-container {
+    /* Agrega tus estilos específicos para móvil aquí */
+    /* Por ejemplo, puedes cambiar la altura o el padding */
+    min-height: 50vh;
+    display: block;
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+  .contact-card {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    /* Agrega tus estilos específicos para móvil aquí */
+    /* Por ejemplo, puedes cambiar la altura o el padding */
+    min-height: 50vh;
+    display: block;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .contact-card {
+    width: 21rem;
+  }
 }

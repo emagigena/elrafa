@@ -36,7 +36,7 @@ export default function ItemDetailContainer({}) {
         )}
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

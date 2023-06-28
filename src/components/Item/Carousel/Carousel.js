@@ -1,29 +1,19 @@
-import React from "react"
-import Carousel from 'react-bootstrap/Carousel';
-import './Carousel.css'
+import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import "./Carousel.css";
 
-
-function ShowCarousel( {fotos} ) {
-  console.log(fotos);
+function ShowCarousel({ fotos }) {
   return (
-<div>
-    <Carousel className='carousell' variant="dark" interval={null}>
-
+    <div>
+      <Carousel className="carousell" variant="dark" interval={null}>
         <Carousel.Item>
-        <img 
-        src={fotos[0]} 
-        alt="First slide"
-        />
+          <img src={fotos[0]} alt="First slide" />
         </Carousel.Item>
         <Carousel.Item>
-        <img 
-
-        src={fotos[1]} 
-        alt="First slide"
-        />
+          <img src={fotos[1]} alt="First slide" />
         </Carousel.Item>
-    </Carousel>
-</div>
-  )
+      </Carousel>
+    </div>
+  );
 }
 export default ShowCarousel;
