@@ -35,7 +35,7 @@ export default function ItemDetail({ producto }) {
           ""
         )}
             <div className="ImageContainer">
-              <img src={foto} alt="Foto principal" />
+              <img src={foto} alt="Foto principal"/>
               <ul className="PhotoList">
                 {producto.FOTOS.map((foto, index) => (
                   <li key={index} onClick={() => cambiarFoto(index)}>
