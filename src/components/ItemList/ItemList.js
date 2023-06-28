@@ -8,6 +8,7 @@ import { Container } from "react-bootstrap";
 function ItemList({ productos }) {
   const [filtroNombre, setFiltroNombre] = useState("");
   const [filtroMarca, setFiltroMarca] = useState("");
+  const [filtroCalibre, setFiltroCalibre] = useState("");
   const [orden, setOrden] = useState("");
 
   const handleNombreChange = (event) => {
@@ -18,18 +19,25 @@ function ItemList({ productos }) {
     setFiltroMarca(event.target.value);
   };
 
+  const handleFiltroCalibre = (event) => {
+    setFiltroCalibre(event.target.value);
+  };
+
   const handleOrdenChange = (event) => {
     setOrden(event.target.value);
   };
 
   const marcas = [...new Set(productos.map((prod) => prod.MARCA))];
+  const calibres = [...new Set(productos.map((prod) => prod.CALIBRE))];
 
   const filteredProductos = productos
     .filter((prod) => {
       const nombre = prod.NOMBRE ? prod.NOMBRE.toLowerCase() : "";
       const marca = prod.MARCA ? prod.MARCA.toLowerCase() : "";
+      const calibre = prod.CALIBRE;
       return (
         nombre.includes(filtroNombre.toLowerCase()) &&
+        (filtroCalibre === "" || calibre === parseInt(filtroCalibre)) &&
         (filtroMarca === "" || marca === filtroMarca.toLowerCase())
       );
     })
@@ -80,8 +88,27 @@ function ItemList({ productos }) {
           </FloatingLabel>
           <FloatingLabel
             className="filter"
+            id="floatingSelect"
+            label="Seleccione el Calibre"
+          >
+            <Form.Select
+              aria-label="Floating label select example"
+              id="filtroCalibre"
+              value={filtroCalibre}
+              onChange={handleFiltroCalibre}
+            >
+              <option value=""></option>
+              {calibres.map((calibre) => (
+                <option key={calibre} value={calibre}>
+                  Calibre: {calibre}
+                </option>
+              ))}
+            </Form.Select>
+          </FloatingLabel>
+          <FloatingLabel
+            className="filter"
             controlId="floatingSelect"
-            label="Filtrar por"
+            label="Ordenar por"
           >
             <Form.Select
               aria-label="Floating label select example"
