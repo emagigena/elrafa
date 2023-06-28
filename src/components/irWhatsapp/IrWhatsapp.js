@@ -9,7 +9,7 @@ const IrWhatsapp = ({ cartList, dataFormulario, generarOrden }) => {
     );
     const message = `Mis Nombre: ${
       dataFormulario.nombre
-    }, Estoy interesado por: ${productosInfo.join()}`;
+    }, Escribo desde la pagina web y estoy interesado por: ${productosInfo.join()}`;
     const url = `https://wa.me/3425152705?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
