@@ -10,7 +10,7 @@ const Map = () => {
         style={{ marginTop: "20px", marginBottom: "20px" }}
         className="sm:mt-15 mx-auto max-w-7xl mb-10 px-4 sm:px-6 lg:px-8"
       >
-        <div style={{ marginTop: "30px", marginBottom: "20px" }}>
+        <div style={{ marginTop: "30px", marginBottom: "30px" }}>
           <h1 className="text-2xl font-semibold text-black text-center">
             NUESTRA UBICACIÓN
           </h1>

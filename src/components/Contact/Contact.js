@@ -7,7 +7,7 @@ const Contact = () => {
   const message = `¡Hola!, me gustaría realizar una consulta, espero su respuesta con paciencia, muchas gracias`;
   return (
     <>
-      <div style={{ marginTop: "80px" }}>
+      <div style={{ marginTop: "40px" }}>
         <h1 className="text-2xl font-semibold text-black text-center">
           CONTACTÁ CON NOSOTROS
         </h1>

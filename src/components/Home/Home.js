@@ -41,7 +41,7 @@ const Home = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        marginBottom: "169px",
+        marginBottom: "20px",
         position: "relative",
       }}
     >
