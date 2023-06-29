@@ -26,16 +26,23 @@ export default function ItemDetail({ producto }) {
       <Container>
         <Row>
           <Col>
-            {producto.STOCK > 0 ? (
-          <div style={{display: "flex", justifyContent: "space-between" }}>
-            <Badge>EN STOCK</Badge>
-            <Badge bg="success">¡OFERTA!</Badge>
-          </div>
-        ) : (
-          ""
-        )}
+            {producto > 0 ? (
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Badge style={{ borderRadius: "0px", width: "31%" }}>
+                  EN STOCK
+                </Badge>
+                <Badge
+                  bg="success"
+                  style={{ borderRadius: "0px", width: "31%" }}
+                >
+                  ¡OFERTA!
+                </Badge>
+              </div>
+            ) : (
+              ""
+            )}
             <div className="ImageContainer">
-              <img src={foto} alt="Foto principal"/>
+              <img src={foto} alt="Foto principal" />
               <ul className="PhotoList">
                 {producto.FOTOS.map((foto, index) => (
                   <li key={index} onClick={() => cambiarFoto(index)}>

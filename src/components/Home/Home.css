@@ -16,13 +16,20 @@
   position: absolute;
   bottom: 0;
   font-size: x-large;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .bottom-text-title {
   position: absolute;
   bottom: 0;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
+}
+
+.bottom-text-hours {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 @media (max-width: 728px) {
@@ -38,5 +45,15 @@
     bottom: 0;
     margin-bottom: 100px;
     font-weight: 900;
+  }
+  .bottom-text-hours {
+    position: absolute;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: 0;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: 500;
   }
 }

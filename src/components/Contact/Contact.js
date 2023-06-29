@@ -11,6 +11,12 @@ const Contact = () => {
         <h1 className="text-2xl font-semibold text-black text-center">
           CONTACTÁ CON NOSOTROS
         </h1>
+
+        <div className="bottom-textt-hours text-2xl font-bold text-black text-center">
+          <p>
+            Lun a Vie 8.30H a 12:30H - 16.30H 20.30H | Sab de 8:30H a 12:30H.
+          </p>
+        </div>
       </div>
       <div className="contact-container">
         <Row xs={1} md={2} className="g-4 rowClass justify-content-center">

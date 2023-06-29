@@ -11,9 +11,9 @@ function Item({ prod }) {
     <li>
       <Card className="card1">
         {prod.STOCK > 0 ? (
-          <div style={{display: "flex", justifyContent: "space-between", padding: "10px" }}>
-            <Badge>EN STOCK</Badge>
-            <Badge bg="success">¡OFERTA!</Badge>
+          <div style={{display: "flex", justifyContent: "space-between", }}>
+            <Badge style={{borderRadius: "0px", width: "100%"}}>EN STOCK</Badge>
+            <Badge bg="success" style={{borderRadius: "0px", width: "100%"}}>¡OFERTA!</Badge>
           </div>
         ) : (
           ""
