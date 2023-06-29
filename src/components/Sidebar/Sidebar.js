@@ -16,7 +16,7 @@ function Sidebar({
   handleMarcaChange,
   handleFiltroCalibre,
   handleOrdenChange,
-  handleFiltroTipo,
+  handleTipoChange,
   categoria,
 }) {
   return (
@@ -63,7 +63,7 @@ function Sidebar({
               aria-label="Floating label select example"
               id="filtroTipo"
               value={filtroTipo}
-              onChange={handleFiltroTipo}
+              onChange={handleTipoChange}
             >
               <option value="">Todas</option>
               {tipos.map((tipo) => (

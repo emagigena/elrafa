@@ -16,7 +16,7 @@ function SidebarMobile({
   handleMarcaChange,
   handleFiltroCalibre,
   handleOrdenChange,
-  handleFiltroTipo,
+  handleTipoChange,
 }) {
   return (
     <>
@@ -60,7 +60,7 @@ function SidebarMobile({
           aria-label="Floating label select example"
           id="filtroTipo"
           value={filtroTipo}
-          onChange={handleFiltroTipo}
+          onChange={handleTipoChange}
         >
           <option value="">Todas</option>
           {tipos.map((tipo) => (
