@@ -10,7 +10,7 @@ import {
   where,
 } from "firebase/firestore";
 import Footer from "../Footer/Footer";
-import { Spinner } from "react-bootstrap";
+import { Spinner, Card } from "react-bootstrap";
 
 export default function ItemListContainer() {
   const [productos, setProductos] = useState([]);

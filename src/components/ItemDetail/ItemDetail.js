@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ItemDetail.css";
-import { Container, Row, Col, Button, Badge } from "react-bootstrap";
+import { Container, Row, Col, Button, Badge, Accordion } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCounter";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../Context/CartContext";
@@ -56,11 +56,22 @@ export default function ItemDetail({ producto }) {
             <div className="InfoContainer">
               <h2 className="ProductName">{producto.NOMBRE}</h2>
               <h3>$ {producto.PRECIO}</h3>
-              <p>
-                {producto.DESCRIPCION
-                  ? producto.DESCRIPCION
-                  : "Este es un producto de nuestra página web. Para pedir, canjear o consultar, por favor envía un mensaje de WhatsApp al siguiente número: 342111111111. ¡Gracias!"}
-              </p>
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Descripción</Accordion.Header>
+                  <Accordion.Body>
+                    {producto.DESCRIPCION ? (
+                      <span style={{textAlign: "justify"}}><p>{producto.DESCRIPCION}</p></span>
+                    ) : (
+                      <p>
+                        Este es un producto de nuestra página web. Para pedir,
+                        canjear o consultar, por favor envía un mensaje de
+                        WhatsApp al siguiente número: 342111111111. ¡Gracias!
+                      </p>
+                    )}
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
               {state ? (
                 <ItemCount stock={producto.STOCK} initial={1} onAdd={onAdd} />
               ) : (
@@ -71,7 +82,7 @@ export default function ItemDetail({ producto }) {
                     style={{ backgroundColor: "red", color: "white" }}
                     size="lg"
                   >
-                    Pedir ahora
+                    Consultar
                   </Button>
                 </Link>
               )}

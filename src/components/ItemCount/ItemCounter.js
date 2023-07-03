@@ -14,9 +14,12 @@ export default function ItemCount({ stock, initial, onAdd }) {
 
   return (
     <div className="CountCard">
-      <Card.Text>({stock} disponibles)</Card.Text>
-      <div className="InputCantidad">
-        <InputGroup>
+      <Card.Text style={{ marginTop: "20px" }}>({stock} disponibles)</Card.Text>
+      {/* <div
+        style={{ alignItems: "center", justifyContent: "center" }}
+        className="InputCantidad"
+      > */}
+      {/* <InputGroup style={{ width: "30%" }}>
           <Button variant="outline-secondary" onClick={rest}>
             -
           </Button>
@@ -24,18 +27,19 @@ export default function ItemCount({ stock, initial, onAdd }) {
           <Button variant="outline-secondary" onClick={sum}>
             +
           </Button>
-        </InputGroup>
-      </div>
+        </InputGroup> */}
+      {/* </div> */}
       <div className="d-grip gap-2">
         <Button
           variant="outline-none"
-          className="btn" style={{backgroundColor: "red", color: "white"}}
+          className="btn"
+          style={{ backgroundColor: "red", color: "white" }}
           size="lg"
           onClick={(event) => {
             onAdd(count);
           }}
         >
-          Agregar al Pedido
+          Consultar por este producto{" "}
         </Button>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Item from "../../components/Item/Item.js";
 import "./ItemList.css";
-import { Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import Sidebar from "../Sidebar/Sidebar.js";
 import SidebarMobile from "../SideBarMobile/SideBarMobile.js";
 
@@ -36,7 +36,6 @@ function ItemList({ productos }) {
   const calibres = [...new Set(productos.map((prod) => prod.CALIBRE))];
   const tipos = [...new Set(productos.map((prod) => prod.TIPO))];
   const categoria = productos.some((prod) => prod.CATEGORÍA === "ARMERÍA");
-console.log(categoria);
   const filteredProductos = productos
     .filter((prod) => {
       const nombre = prod.NOMBRE ? prod.NOMBRE.toLowerCase() : "";
@@ -101,9 +100,54 @@ console.log(categoria);
           />
         </div>
         <div className="item-list">
-          {filteredProductos.map((prod) => (
-            <Item key={prod.id} prod={prod} />
-          ))}
+          {filteredProductos.map((prod) =>
+            prod ? (
+              <Item key={prod.id} prod={prod} />
+            ) : (
+              <li>
+                <Card className="card1">
+                  <Card.Body style={{ textAlign: "center" }}>
+                    <Card.Title className="ProductName"></Card.Title>
+                    <Card.Title>
+                      <span style={{ color: "grey", fontSize: "15px" }}>
+                        <p>$ Consultar</p>
+                      </span>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+                <Card className="card1">
+                  <Card.Body style={{ textAlign: "center" }}>
+                    <Card.Title className="ProductName"></Card.Title>
+                    <Card.Title>
+                      <span style={{ color: "grey", fontSize: "15px" }}>
+                        <p>$ Consultar</p>
+                      </span>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+                <Card className="card1">
+                  <Card.Body style={{ textAlign: "center" }}>
+                    <Card.Title className="ProductName"></Card.Title>
+                    <Card.Title>
+                      <span style={{ color: "grey", fontSize: "15px" }}>
+                        <p>$ Consultar</p>
+                      </span>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+                <Card className="card1">
+                  <Card.Body style={{ textAlign: "center" }}>
+                    <Card.Title className="ProductName"></Card.Title>
+                    <Card.Title>
+                      <span style={{ color: "grey", fontSize: "15px" }}>
+                        <p>$ Consultar</p>
+                      </span>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </li>
+            )
+          )}
         </div>
       </Container>
     </div>

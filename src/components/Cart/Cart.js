@@ -149,9 +149,9 @@ function Cart() {
                               <span>{item.NOMBRE}</span>
                             </div>
                           </td>
-                          <td>${item.PRECIO}</td>
+                          <td>$ Consultar</td>
                           <td>{item.cantidad}</td>
-                          <td>${item.cantidad * item.PRECIO}</td>
+                          <td></td>
                           <td>
                             <Button
                               variant="danger"
@@ -194,7 +194,7 @@ function Cart() {
                       />
                     </Form.Group>
 
-                    <Form.Group>
+                    {/* <Form.Group>
                       <Form.Label>Celular</Form.Label>
                       <Form.Control
                         name="telefono"
@@ -203,9 +203,9 @@ function Cart() {
                         value={dataFormulario.telefono}
                         onChange={handleOnChange}
                       />
-                    </Form.Group>
+                    </Form.Group> */}
 
-                    <Form.Group>
+                    {/* <Form.Group>
                       <Form.Label>Dirección</Form.Label>
                       <Form.Control
                         name="direccion"
@@ -214,7 +214,7 @@ function Cart() {
                         value={dataFormulario.direccion}
                         onChange={handleOnChange}
                       />
-                    </Form.Group>
+                    </Form.Group> */}
                     <Container style={{ marginTop: "10px" }}>
                       {Object.values(dataFormulario).some(
                         (value) => value !== ""
