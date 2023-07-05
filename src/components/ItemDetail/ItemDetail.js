@@ -4,6 +4,9 @@ import { Container, Row, Col, Button, Badge, Accordion } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCounter";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../Context/CartContext";
+import Hornady from "../Munitions/hornady/Hornady";
+import Magtech from "../Munitions/magtech/Magtech";
+import Remington from "../Munitions/remington/Remington";
 
 export default function ItemDetail({ producto }) {
   const [state, setState] = useState(true);
@@ -55,13 +58,21 @@ export default function ItemDetail({ producto }) {
           <Col>
             <div className="InfoContainer">
               <h2 className="ProductName">{producto.NOMBRE}</h2>
-              <h3>$ {producto.PRECIO}</h3>
+              <h3>$ Consultar</h3>
               <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Descripción</Accordion.Header>
                   <Accordion.Body>
-                    {producto.DESCRIPCION ? (
-                      <span style={{textAlign: "justify"}}><p>{producto.DESCRIPCION}</p></span>
+                    {producto.MARCA === "HORNADY" ? (
+                      <Hornady />
+                    ) : producto.MARCA === "MAGTECH" ? (
+                      <Magtech />
+                    ) : producto.MARCA === "REMINGTON" ? (
+                      <Remington />
+                    ) : producto.DESCRIPCION ? (
+                      <span style={{ textAlign: "justify" }}>
+                        <p>{producto.DESCRIPCION}</p>
+                      </span>
                     ) : (
                       <p>
                         Este es un producto de nuestra página web. Para pedir,

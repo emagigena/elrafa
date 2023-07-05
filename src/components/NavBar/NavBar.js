@@ -34,11 +34,11 @@ export default function NavBar() {
             <NavLink to="/CATEGORÍA/ARMERÍA" className="nav-link text-white">
               <span>ARMERÍA</span>
             </NavLink>
+            <NavLink to="/CATEGORÍA/MUNICIONES" className="nav-link text-white">
+              <span>MUNICIONES</span>
+            </NavLink>
             <NavLink to="/CATEGORÍA/NÁUTICA" className="nav-link text-white">
               <span>NÁUTICA</span>
-            </NavLink>
-            <NavLink to="/CATEGORÍA/CAMPING" className="nav-link text-white">
-              <span>CAMPING</span>
             </NavLink>
             <NavLink to="/CATEGORÍA/PESCA" className="nav-link text-white">
               <span>PESCA</span>

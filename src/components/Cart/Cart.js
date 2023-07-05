@@ -21,9 +21,7 @@ function Cart() {
   const [idOrden, setIdOrden] = useState(null);
   const [dataFormulario, setDataFormulario] = useState({
     nombre: "",
-    apellido: "",
-    telefono: "",
-    direccion: "",
+    apellido: ""
   });
   const {
     cartList,
@@ -167,7 +165,7 @@ function Cart() {
                 </div>
 
                 <hr />
-                <h2>Total: ${calcularTotal()}</h2>
+                {/* <h2>Total: $ A Definir</h2> */}
 
                 <div className="formulario">
                   <h2>Formulario de Pedido:</h2>

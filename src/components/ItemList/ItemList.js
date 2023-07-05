@@ -100,54 +100,9 @@ function ItemList({ productos }) {
           />
         </div>
         <div className="item-list">
-          {filteredProductos.map((prod) =>
-            prod ? (
-              <Item key={prod.id} prod={prod} />
-            ) : (
-              <li>
-                <Card className="card1">
-                  <Card.Body style={{ textAlign: "center" }}>
-                    <Card.Title className="ProductName"></Card.Title>
-                    <Card.Title>
-                      <span style={{ color: "grey", fontSize: "15px" }}>
-                        <p>$ Consultar</p>
-                      </span>
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-                <Card className="card1">
-                  <Card.Body style={{ textAlign: "center" }}>
-                    <Card.Title className="ProductName"></Card.Title>
-                    <Card.Title>
-                      <span style={{ color: "grey", fontSize: "15px" }}>
-                        <p>$ Consultar</p>
-                      </span>
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-                <Card className="card1">
-                  <Card.Body style={{ textAlign: "center" }}>
-                    <Card.Title className="ProductName"></Card.Title>
-                    <Card.Title>
-                      <span style={{ color: "grey", fontSize: "15px" }}>
-                        <p>$ Consultar</p>
-                      </span>
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-                <Card className="card1">
-                  <Card.Body style={{ textAlign: "center" }}>
-                    <Card.Title className="ProductName"></Card.Title>
-                    <Card.Title>
-                      <span style={{ color: "grey", fontSize: "15px" }}>
-                        <p>$ Consultar</p>
-                      </span>
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </li>
-            )
-          )}
+          {filteredProductos.map((prod) => (
+            <Item key={prod.id} prod={prod} />
+          ))}
         </div>
       </Container>
     </div>
