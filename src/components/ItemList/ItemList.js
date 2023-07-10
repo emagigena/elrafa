@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Item from "../../components/Item/Item.js";
 import "./ItemList.css";
-import { Card, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Sidebar from "../Sidebar/Sidebar.js";
 import SidebarMobile from "../SideBarMobile/SideBarMobile.js";
 
@@ -10,8 +10,18 @@ function ItemList({ productos }) {
   const [filtroMarca, setFiltroMarca] = useState("");
   const [filtroCalibre, setFiltroCalibre] = useState("");
   const [filtroTipo, setFiltroTipo] = useState("");
-
   const [orden, setOrden] = useState("");
+  const [isFadeIn, setIsFadeIn] = useState(false);
+
+  useEffect(() => {
+    // Agrega una clase CSS después de un breve retraso para activar la animación
+    const timer = setTimeout(() => {
+      setIsFadeIn(true);
+    }, 100);
+
+    // Limpia el temporizador al desmontar el componente
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleNombreChange = (event) => {
     setFiltroNombre(event.target.value);
@@ -99,7 +109,7 @@ function ItemList({ productos }) {
             handleOrdenChange={handleOrdenChange}
           />
         </div>
-        <div className="item-list">
+        <div className={`item-list ${isFadeIn ? "fade-in" : ""}`}>
           {filteredProductos.map((prod) => (
             <Item key={prod.id} prod={prod} />
           ))}

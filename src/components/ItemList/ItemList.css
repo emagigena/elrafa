@@ -7,6 +7,18 @@
   height: auto;
 }
 
+
+.item-list {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 1.5s;
+}
+
+.item-list.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .filters {
   width: auto;
   margin: 25px;

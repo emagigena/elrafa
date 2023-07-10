@@ -6,7 +6,7 @@ import ShowCarousel from "./Carousel/Carousel";
 import { Link } from "react-router-dom";
 import { Badge } from "react-bootstrap";
 
-function Item({ prod }) {
+function Item({ prod, style }) {
   return (
     <>
       {prod ? (
