@@ -26,7 +26,7 @@ export default function NavBar() {
             bg="light"
             variant="light"
             className="ContainerNavbar"
-            style={{justifyContent: "center"}}
+            style={{ justifyContent: "center" }}
           >
             <NavLink to="/">
               <Image
@@ -62,6 +62,9 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
+                  <span className="nav-icon-label" style={{ color: "black" }}>
+                    Armas
+                  </span>
                   {/* <span className="nav-icon-label">Armería</span> */}
                 </div>
               </NavLink>
@@ -76,10 +79,14 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
+                  <span className="nav-icon-label" style={{ color: "black" }}>
+                    Balas
+                  </span>
+
                   {/* <span className="nav-icon-label">Municiones</span> */}
                 </div>
               </NavLink>
-              
+
               <NavLink to="/contacto">
                 <Image
                   src={
@@ -102,6 +109,10 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
+                  <span className="nav-icon-label" style={{ color: "black" }}>
+                    Nautica
+                  </span>
+
                   {/* <span className="nav-icon-label">Náutica</span> */}
                 </div>
               </NavLink>
@@ -116,6 +127,10 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
+                  <span className="nav-icon-label" style={{ color: "black" }}>
+                    Pesca
+                  </span>
+
                   {/* <span className="nav-icon-label">Pesca</span> */}
                 </div>
               </NavLink>
