@@ -18,9 +18,6 @@
 }
 
 .contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 60vh; /* Ajusta la altura según tus necesidades */
 }
 @media screen and (max-width: 1375px) {

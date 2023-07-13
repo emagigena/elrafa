@@ -19,6 +19,24 @@
   width: 100%;
   padding: 0;
 }
+.ContainerNavbarMobile {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  border-top: solid;
+  border-color: rgb(46, 46, 46)
+}
 .nav-link {
   margin-left: 10px;
   font-family: "Montserrat";

@@ -8,6 +8,7 @@ function SidebarMobile({
   filtroMarca,
   filtroCalibre,
   filtroTipo,
+  filtroTipoNautica,
   orden,
   tipos,
   marcas,
@@ -17,6 +18,8 @@ function SidebarMobile({
   handleFiltroCalibre,
   handleOrdenChange,
   handleTipoChange,
+  handleTipoChangeNautica,
+  categoria
 }) {
   return (
     <>
@@ -51,44 +54,70 @@ function SidebarMobile({
           ))}
         </Form.Select>
       </FloatingLabel>
-      <FloatingLabel
-        className="filter"
-        id="floatingSelect"
-        label="Seleccione Tipo"
-      >
-        <Form.Select
-          aria-label="Floating label select example"
-          id="filtroTipo"
-          value={filtroTipo}
-          onChange={handleTipoChange}
-        >
-          <option value="">Todas</option>
-          {tipos.map((tipo) => (
-            <option key={tipo} value={tipo}>
-              {tipo}
-            </option>
-          ))}
-        </Form.Select>
-      </FloatingLabel>
-      <FloatingLabel
-        className="filter"
-        id="floatingSelect"
-        label="Seleccione Calibre"
-      >
-        <Form.Select
-          aria-label="Floating label select example"
-          id="filtroCalibre"
-          value={filtroCalibre}
-          onChange={handleFiltroCalibre}
-        >
-          <option value="">Todas</option>
-          {calibres.map((calibre) => (
-            <option key={calibre} value={calibre}>
-              {calibre}
-            </option>
-          ))}
-        </Form.Select>
-      </FloatingLabel>
+      {categoria ? (
+        <>
+          <FloatingLabel
+            className="filter"
+            id="floatingSelect"
+            label="Seleccione Tipo"
+          >
+            <Form.Select
+              aria-label="Floating label select example"
+              id="filtroTipo"
+              value={filtroTipo}
+              onChange={handleTipoChange}
+            >
+              <option value="">Todas</option>
+              {tipos.map((tipo) => (
+                <option key={tipo} value={tipo}>
+                  {tipo}
+                </option>
+              ))}
+            </Form.Select>
+          </FloatingLabel>
+          <FloatingLabel
+            className="filter"
+            id="floatingSelect"
+            label="Seleccione Calibre"
+          >
+            <Form.Select
+              aria-label="Floating label select example"
+              id="filtroCalibre"
+              value={filtroCalibre}
+              onChange={handleFiltroCalibre}
+            >
+              <option value="">Todas</option>
+              {calibres.map((calibre) => (
+                <option key={calibre} value={calibre}>
+                  {calibre}
+                </option>
+              ))}
+            </Form.Select>
+          </FloatingLabel>
+        </>
+      ) : (
+        <>
+          <FloatingLabel
+            className="filter"
+            id="floatingSelect"
+            label="Seleccione Tipo"
+          >
+            <Form.Select
+              aria-label="Floating label select example"
+              id="filtroTipoNautica"
+              value={filtroTipoNautica}
+              onChange={handleTipoChangeNautica}
+            >
+              <option value="">Todas</option>
+              {tipos.map((tipo) => (
+                <option key={tipo} value={tipo}>
+                  {tipo}
+                </option>
+              ))}
+            </Form.Select>
+          </FloatingLabel>
+        </>
+      )}
       <FloatingLabel
         className="filter"
         controlId="floatingSelect"

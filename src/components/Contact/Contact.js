@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import contactos from "./contact.json";
 import "./Contact.css";
 
@@ -18,8 +18,11 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className="contact-container">
-        <Row xs={1} md={2} className="g-4 rowClass justify-content-center">
+      <Container
+        className="contact-container"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <Row xs={1} md={2} className="g-4 rowClass">
           {contactos.map((contacto, idx) => {
             const tipoContacto = Object.keys(contacto)[0];
             const datosContacto = contacto[tipoContacto];
@@ -50,7 +53,7 @@ const Contact = () => {
             );
           })}
         </Row>
-      </div>
+      </Container>
     </>
   );
 };

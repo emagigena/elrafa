@@ -8,6 +8,7 @@ function Sidebar({
   filtroMarca,
   filtroCalibre,
   filtroTipo,
+  filtroTipoNautica,
   orden,
   tipos,
   marcas,
@@ -17,6 +18,7 @@ function Sidebar({
   handleFiltroCalibre,
   handleOrdenChange,
   handleTipoChange,
+  handleTipoChangeNautica,
   categoria,
 }) {
   return (
@@ -94,7 +96,27 @@ function Sidebar({
           </FloatingLabel>
         </>
       ) : (
-        ""
+        <>
+          <FloatingLabel
+            className="filter"
+            id="floatingSelect"
+            label="Seleccione Tipo"
+          >
+            <Form.Select
+              aria-label="Floating label select example"
+              id="filtroTipoNautica"
+              value={filtroTipoNautica}
+              onChange={handleTipoChangeNautica}
+            >
+              <option value="">Todas</option>
+              {tipos.map((tipo) => (
+                <option key={tipo} value={tipo}>
+                  {tipo}
+                </option>
+              ))}
+            </Form.Select>
+          </FloatingLabel>
+        </>
       )}
       <FloatingLabel
         className="filter"

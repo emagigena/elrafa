@@ -10,6 +10,7 @@ function ItemList({ productos }) {
   const [filtroMarca, setFiltroMarca] = useState("");
   const [filtroCalibre, setFiltroCalibre] = useState("");
   const [filtroTipo, setFiltroTipo] = useState("");
+  const [filtroTipoNautica, setFiltroTipoNautica] = useState("");
   const [orden, setOrden] = useState("");
   const [isFadeIn, setIsFadeIn] = useState(false);
 
@@ -38,6 +39,11 @@ function ItemList({ productos }) {
   const handleTipoChange = (event) => {
     setFiltroTipo(event.target.value);
   };
+
+  const handleTipoChangeNautica = (event) => {
+    setFiltroTipoNautica(event.target.value);
+  };
+
   const handleOrdenChange = (event) => {
     setOrden(event.target.value);
   };
@@ -78,6 +84,7 @@ function ItemList({ productos }) {
           filtroMarca={filtroMarca}
           filtroTipo={filtroTipo}
           filtroCalibre={filtroCalibre}
+          filtroTipoNautica={filtroTipoNautica}
           tipos={tipos}
           orden={orden}
           marcas={marcas}
@@ -86,6 +93,7 @@ function ItemList({ productos }) {
           handleMarcaChange={handleMarcaChange}
           handleFiltroCalibre={handleFiltroCalibre}
           handleTipoChange={handleTipoChange}
+          handleTipoChangeNautica={handleTipoChangeNautica}
           handleOrdenChange={handleOrdenChange}
           categoria={categoria}
         />
@@ -98,6 +106,7 @@ function ItemList({ productos }) {
             filtroMarca={filtroMarca}
             filtroTipo={filtroTipo}
             filtroCalibre={filtroCalibre}
+            filtroTipoNautica={filtroTipoNautica}
             tipos={tipos}
             orden={orden}
             marcas={marcas}
@@ -106,7 +115,9 @@ function ItemList({ productos }) {
             handleMarcaChange={handleMarcaChange}
             handleFiltroCalibre={handleFiltroCalibre}
             handleTipoChange={handleTipoChange}
+            handleTipoChangeNautica={handleTipoChangeNautica}
             handleOrdenChange={handleOrdenChange}
+            categoria={categoria}
           />
         </div>
         <div className={`item-list ${isFadeIn ? "fade-in" : ""}`}>
