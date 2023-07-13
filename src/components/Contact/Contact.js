@@ -6,7 +6,7 @@ import "./Contact.css";
 const Contact = () => {
   const message = `¡Hola!, me gustaría realizar una consulta desde la pagina web, espero su respuesta con paciencia, muchas gracias`;
   return (
-    <>
+    <Container>
       <div style={{ marginTop: "40px" }}>
         <h1 className="text-2xl font-semibold text-black text-center">
           CONTACTÁ CON NOSOTROS
@@ -54,7 +54,7 @@ const Contact = () => {
           })}
         </Row>
       </Container>
-    </>
+    </Container>
   );
 };
 
