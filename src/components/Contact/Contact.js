@@ -18,11 +18,11 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <Container
+      <div
         className="contact-container"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <Row xs={1} md={2} className="g-4 rowClass">
+        <Row xs={1} md={2} className="g-5 rowClass">
           {contactos.map((contacto, idx) => {
             const tipoContacto = Object.keys(contacto)[0];
             const datosContacto = contacto[tipoContacto];
@@ -53,7 +53,7 @@ const Contact = () => {
             );
           })}
         </Row>
-      </Container>
+      </div>
     </Container>
   );
 };

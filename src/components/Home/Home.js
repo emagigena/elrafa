@@ -34,7 +34,7 @@ const Home = () => {
       style={{
         backgroundImage: backgroundImage,
         width: "100%",
-        height: "490px",
+        height: isMobile ? "350px" : "490px",
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",

@@ -22,35 +22,13 @@ export default function NavBar() {
         // Barra de navegación inferior para dispositivos móviles
         <>
           <Navbar
-            expand="lg"
-            bg="light"
-            variant="light"
-            className="ContainerNavbar"
-            style={{ justifyContent: "center" }}
-          >
-            <NavLink to="/">
-              <Image
-                src={
-                  "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
-                }
-                className="logoinstrumental"
-                alt="logo"
-                width="64"
-                height="64"
-              />
-            </NavLink>
-          </Navbar>
-          <Navbar
             fixed="bottom"
             bg="black"
             variant="light"
             className="ContainerNavbarMobile d-block d-lg-none"
-            style={{ paddingBottom: "10px" }}
+            style={{ overflow: "scroll" }}
           >
-            <Nav
-              className="w-100"
-              style={{ justifyContent: "center", padding: "10px" }}
-            >
+            <Nav className="w-100" style={{ justifyContent: "center" }}>
               <NavLink
                 to="/CATEGORÍA/ARMERÍA"
                 className="nav-link text-white w-20 text-center"
@@ -62,10 +40,12 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
-                  <span className="nav-icon-label" style={{ color: "black" }}>
+                  <span
+                    className="nav-icon-label"
+                    style={{ color: "black", fontSize: "10px" }}
+                  >
                     Armas
                   </span>
-                  {/* <span className="nav-icon-label">Armería</span> */}
                 </div>
               </NavLink>
               <NavLink
@@ -79,25 +59,33 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
-                  <span className="nav-icon-label" style={{ color: "black" }}>
+                  <span
+                    className="nav-icon-label"
+                    style={{ color: "black", fontSize: "10px" }}
+                  >
                     Balas
                   </span>
-
-                  {/* <span className="nav-icon-label">Municiones</span> */}
                 </div>
               </NavLink>
-
-              <NavLink to="/contacto">
-                <Image
-                  src={
-                    "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
-                  }
-                  className="logoelrafa"
-                  alt="logo"
-                  width="64"
-                  height="64"
-                />
+              <NavLink to="/" className="nav-link text-white w-20 text-center">
+                <div className="nav-icon">
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
+                    }
+                    className="nav-icon-img"
+                    alt="logo"
+                    style={{ width: "55px", height: "55px" }}
+                  />
+                </div>
+                <span
+                  className="nav-icon-label"
+                  style={{ color: "black", fontSize: "10px" }}
+                >
+                  Home
+                </span>
               </NavLink>
+
               <NavLink
                 to="/CATEGORÍA/NÁUTICA"
                 className="nav-link text-white w-20 text-center"
@@ -109,11 +97,12 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
-                  <span className="nav-icon-label" style={{ color: "black" }}>
+                  <span
+                    className="nav-icon-label"
+                    style={{ color: "black", fontSize: "10px" }}
+                  >
                     Nautica
                   </span>
-
-                  {/* <span className="nav-icon-label">Náutica</span> */}
                 </div>
               </NavLink>
               <NavLink
@@ -127,11 +116,12 @@ export default function NavBar() {
                     className="nav-icon-img"
                     style={{ width: "55px", height: "55px" }}
                   />
-                  <span className="nav-icon-label" style={{ color: "black" }}>
+                  <span
+                    className="nav-icon-label"
+                    style={{ color: "black", fontSize: "10px" }}
+                  >
                     Pesca
                   </span>
-
-                  {/* <span className="nav-icon-label">Pesca</span> */}
                 </div>
               </NavLink>
             </Nav>
@@ -152,7 +142,7 @@ export default function NavBar() {
                 src={
                   "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
                 }
-                className="logoinstrumental"
+                className="logorafa"
                 alt="logo"
                 width="64"
                 height="64"

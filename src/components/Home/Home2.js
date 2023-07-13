@@ -8,7 +8,12 @@ export default function Home2() {
   return (
     <Container>
       <div className="contact-container">
-        <Row xs={1} md={2} className="g-4 rowClass justify-content-center">
+        <Row
+          xs={1}
+          sm={2}
+          md={2}
+          className="g-4 rowClass justify-content-center"
+        >
           {home2.map((areas, idx) => {
             const tipoContacto = Object.keys(areas)[0];
             const area = areas[tipoContacto];

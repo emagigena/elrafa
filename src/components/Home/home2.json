@@ -3,7 +3,7 @@
     "armeria": {
       "nombre": "Armería",
       "to": "/CATEGORÍA/ARMERÍA",
-      "text": "Descubre nuestra selección de armas de calidad para tus actividades de caza y tiro.",
+      "text": "Nuestra selección de armas de calidad para tus actividades de caza y tiro.",
       "img": [
         "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361643/el%20rafa/slides%20home/tpzjroajzmdeuzavvxn8.png"
       ]
@@ -13,7 +13,7 @@
     "pesca": {
       "nombre": "Náutica",
       "to": "/CATEGORÍA/NÁUTICA",
-      "text": "Embarcaciones de primer nivel y usados, Aceites, Motores, Kayaks y accesorios para navegación.",
+      "text": "Embarcaciones de primer nivel y usados, Aceites, Motores y mucho mas",
       "img": [
         "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/xps45gn51spjf7riutcz.png"
       ]
@@ -23,7 +23,7 @@
     "nautica": {
       "nombre": "Municiones",
       "to": "/CATEGORÍA/MUNICIONES",
-      "text": "Equípate con nuestras mejores opciones de municiones, cartuchos, balas y recarga.",
+      "text": "Nuestras mejores opciones de municiones, cartuchos, balas y recarga.",
       "img": [
         "https://res.cloudinary.com/dhrfu31jp/image/upload/v1688585246/el%20rafa/municiones/DESTACADAS_EL_RAFA_aeoozf.png"
       ]
@@ -33,7 +33,7 @@
     "camping y pesca": {
       "nombre": "Pesca",
       "to": "/CATEGORÍA/PESCA",
-      "text": "Descubre nuestra selección de cañas, reels, señuelos y todo lo que necesitas para tu pesca perfecta.",
+      "text": "La mejor selección de cañas, reels, señuelos y todo lo que necesitas.",
       "img": [
         "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/ikodc4jcjqpl2wkzlekj.png"
       ]

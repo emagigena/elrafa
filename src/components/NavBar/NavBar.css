@@ -35,7 +35,9 @@
   padding: 0;
   justify-content: center;
   border-top: solid;
-  border-color: rgb(46, 46, 46)
+  border-color: rgb(46, 46, 46);
+  display: inline-block;
+
 }
 .nav-link {
   margin-left: 10px;
