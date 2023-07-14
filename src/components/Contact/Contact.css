@@ -11,6 +11,7 @@
   align-content: center;
   align-items: center;
   text-align: center;
+  display: grid;
 }
 
 .contact-card {
@@ -18,19 +19,19 @@
 }
 
 .contact-container {
-  min-height: 60vh; /* Ajusta la altura según tus necesidades */
+  min-height: 500; /* Ajusta la altura según tus necesidades */
 }
-@media screen and (max-width: 1375px) {
+
+@media screen and (max-width: 1400px) {
   .contact-container {
     /* Agrega tus estilos específicos para móvil aquí */
     /* Por ejemplo, puedes cambiar la altura o el padding */
     min-height: 50vh;
     display: block;
-    padding-left: 10px;
     padding-top: 30px;
   }
   .contact-card {
-    width: 18rem;
+    width: 14rem;
   }
 }
 @media screen and (max-width: 1195px) {
@@ -43,22 +44,21 @@
     padding-top: 30px;
   }
   .contact-card {
-    width: 15rem;
+    width: 16rem;
   }
 }
 
 /* Estilos para dimensiones móviles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .contact-container {
     /* Agrega tus estilos específicos para móvil aquí */
     /* Por ejemplo, puedes cambiar la altura o el padding */
     min-height: 50vh;
-    display: block;
-    padding-left: 10px;
+    flex-direction: column;
     padding-top: 30px;
     padding-bottom: 20px;
   }
   .contact-card {
-    width: 21rem;
+    width: 12rem;
   }
 }

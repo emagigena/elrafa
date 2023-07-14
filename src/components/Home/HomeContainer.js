@@ -4,6 +4,7 @@ import "./HomeContainer.css";
 import Home2 from "./Home2.js";
 import Home3 from "./Home3.js";
 import WhatsAppButton from "../WhatsappButton/WhatsAppButton.js";
+import Home4 from "./Home4.js";
 
 const isMobile = window.innerWidth <= 767;
 
@@ -12,7 +13,6 @@ export default function HomeContainer() {
     <div>
       <div className="homeContainer">
         {isMobile ? <WhatsAppButton /> : ""}
-
         <li>
           <Home />
         </li>
@@ -21,6 +21,9 @@ export default function HomeContainer() {
         </li>
         <li>
           <Home3 />
+        </li>
+        <li>
+          <Home4 />
         </li>
       </div>
     </div>

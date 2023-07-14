@@ -108,7 +108,7 @@ function Cart() {
           <Container className="my-4 bg-white text-center">
             {productosAgregados() === 0 ? (
               <div>
-                <h4>No hay productos en tu Carrito de compras</h4>
+                <h4>No hay productos en tu Carrito de pedidos</h4>
                 <Button
                   className="btn btn-success mx-2"
                   onClick={() => navegar("/")}
@@ -118,7 +118,7 @@ function Cart() {
               </div>
             ) : (
               <div className="my-1">
-                <h2>Carrito de compras:</h2>
+                <h2>Carrito de pedidos:</h2>
                 <hr />
 
                 <div className="Cart">
@@ -126,9 +126,9 @@ function Cart() {
                     <thead>
                       <tr className="font-weight-bold">
                         <th>Productos</th>
-                        <th>Precio</th>
+                        {/* <th>Precio</th>
                         <th>Cantidad</th>
-                        <th>Subtotal</th>
+                        <th>Subtotal</th> */}
                         <th>Quitar del Carrito</th>
                       </tr>
                     </thead>
@@ -147,9 +147,9 @@ function Cart() {
                               <span>{item.NOMBRE}</span>
                             </div>
                           </td>
-                          <td>$ Consultar</td>
+                          {/* <td>$ Consultar</td>
                           <td>{item.cantidad}</td>
-                          <td></td>
+                          <td></td> */}
                           <td>
                             <Button
                               variant="danger"

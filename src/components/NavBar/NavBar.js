@@ -26,7 +26,7 @@ export default function NavBar() {
             bg="black"
             variant="light"
             className="ContainerNavbarMobile d-block d-lg-none"
-            style={{ overflow: "scroll" }}
+            style={{ overflow: "scroll", zIndex: 9999 }}
           >
             <Nav className="w-100" style={{ justifyContent: "center" }}>
               <NavLink
@@ -42,9 +42,9 @@ export default function NavBar() {
                   />
                   <span
                     className="nav-icon-label"
-                    style={{ color: "black", fontSize: "10px" }}
+                    style={{ color: "black", fontSize: "12px" }}
                   >
-                    Armas
+                    <h style={{ fontWeight: 900 }}>ARMAS</h>
                   </span>
                 </div>
               </NavLink>
@@ -61,9 +61,9 @@ export default function NavBar() {
                   />
                   <span
                     className="nav-icon-label"
-                    style={{ color: "black", fontSize: "10px" }}
+                    style={{ color: "black", fontSize: "12px" }}
                   >
-                    Balas
+                    <h style={{ fontWeight: 900 }}>BALAS</h>
                   </span>
                 </div>
               </NavLink>
@@ -80,9 +80,9 @@ export default function NavBar() {
                 </div>
                 <span
                   className="nav-icon-label"
-                  style={{ color: "black", fontSize: "10px" }}
+                  style={{ color: "black", fontSize: "12px" }}
                 >
-                  Home
+                  <h style={{ fontWeight: 900 }}>INICIO</h>
                 </span>
               </NavLink>
 
@@ -99,9 +99,9 @@ export default function NavBar() {
                   />
                   <span
                     className="nav-icon-label"
-                    style={{ color: "black", fontSize: "10px" }}
+                    style={{ color: "black", fontSize: "12px" }}
                   >
-                    Nautica
+                    <h style={{ fontWeight: 900 }}>NÁUTICA</h>
                   </span>
                 </div>
               </NavLink>
@@ -118,9 +118,9 @@ export default function NavBar() {
                   />
                   <span
                     className="nav-icon-label"
-                    style={{ color: "black", fontSize: "10px" }}
+                    style={{ color: "black", fontSize: "12px" }}
                   >
-                    Pesca
+                    <h style={{ fontWeight: 900 }}>PESCA</h>
                   </span>
                 </div>
               </NavLink>

@@ -50,13 +50,29 @@ const Home = () => {
           Tienda online de Armería, Náutica, Pesca & Camping
         </span>
       </h1>
-      <span className="text-white bottom-text">
-        Encontrá todo lo que necesitas para tus aventuras al aire libre.
-      </span>
-      <span className="text-white bottom-text-hours">
-        Lun a Vie 8.30H a 12:30H - 16.30H 20.30H | Sab de 8:30H a
-        12:30H.
-      </span>
+
+      {isMobile ? (
+        <>
+          <span className="text-white bottom-text">
+            <h>Encontrá todo lo que necesitas</h>
+            <tr />
+            <h> para tus aventuras al aire libre.</h>
+          </span>
+          <span className="text-white bottom-text-hours">
+            Lun a Vie 8.30H a 12:30H - 16.30H 20.30H <tr /> Sab de 8:30H a
+            12:30H.
+          </span>
+        </>
+      ) : (
+        <>
+          <span className="text-white bottom-text">
+            Encontrá todo lo que necesitas para tus aventuras al aire libre.
+          </span>
+          <span className="text-white bottom-text-hours">
+            Lun a Vie 8.30H a 12:30H - 16.30H 20.30H | Sab de 8:30H a 12:30H.
+          </span>
+        </>
+      )}
     </section>
   );
 };

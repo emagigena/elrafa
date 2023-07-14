@@ -1,7 +1,9 @@
-.contact-card:hover {
+.category-card:hover {
   transform: translateY(-5px);
-  transition: transform 0.1s;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 10);
+}
+.bottom-textt-hours {
+  font-weight: 500;
 }
 
 .rowClass {
@@ -9,56 +11,60 @@
   align-content: center;
   align-items: center;
   text-align: center;
+  display: grid;
 }
 
-.contact-card {
+.category-card {
   width: 20rem;
 }
 
-.contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 60vh; /* Ajusta la altura según tus necesidades */
+.category-container {
+  min-height: 500; /* Ajusta la altura según tus necesidades */
 }
-@media screen and (max-width: 1375px) {
-  .contact-container {
+
+@media screen and (max-width: 1400px) {
+  .category-container {
     /* Agrega tus estilos específicos para móvil aquí */
     /* Por ejemplo, puedes cambiar la altura o el padding */
     min-height: 50vh;
     display: block;
-    padding-left: 10px;
     padding-top: 30px;
   }
-  .contact-card {
-    width: 18rem;
+  .category-card {
+    width: 14rem;
   }
 }
 @media screen and (max-width: 1195px) {
-  .contact-container {
+  .category-container {
     /* Agrega tus estilos específicos para móvil aquí */
     /* Por ejemplo, puedes cambiar la altura o el padding */
     min-height: 50vh;
     display: block;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-top: 30px;
   }
-  .contact-card {
-    width: 15rem;
+  .category-card {
+    width: 14rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact-container {
+/* Estilos para dimensiones móviles */
+@media screen and (max-width: 400px) {
+  .category-container {
     /* Agrega tus estilos específicos para móvil aquí */
     /* Por ejemplo, puedes cambiar la altura o el padding */
     min-height: 50vh;
-    display: block;
-    padding-left: 10px;
+    flex-direction: column;
     padding-top: 30px;
     padding-bottom: 20px;
   }
-  .contact-card {
-    width: 21rem;
+  .categoryRow {
+    justify-content: center;
+    display: content;
+    column-gap: 3;
+    row-gap: 3;
+  }
+  .category-card {
+    width: 12rem;
   }
 }
