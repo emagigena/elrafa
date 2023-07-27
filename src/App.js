@@ -8,12 +8,15 @@ import CartContextProvider from "./components/Context/CartContext";
 import HomeContainer from "./components/Home/HomeContainer";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import WhatsAppButton from "./components/WhatsappButton/WhatsAppButton";
 
 function App() {
   return (
     <>
       <CartContextProvider>
         <BrowserRouter>
+        <WhatsAppButton />
+
           <NavBar />
           <Routes>
             {<Route path="/" element={<HomeContainer />} />}

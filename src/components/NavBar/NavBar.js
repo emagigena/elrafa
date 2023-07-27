@@ -20,113 +20,112 @@ export default function NavBar() {
     <>
       {isMobile ? (
         // Barra de navegación inferior para dispositivos móviles
-        <>
-          <Navbar
-            fixed="bottom"
-            bg="black"
-            variant="light"
-            className="ContainerNavbarMobile d-block d-lg-none"
-            style={{ overflow: "scroll", zIndex: 9999 }}
-          >
-            <Nav className="w-100" style={{ justifyContent: "center" }}>
-              <NavLink
-                to="/CATEGORÍA/ARMERÍA"
-                className="nav-link text-white w-20 text-center"
-              >
-                <div className="nav-icon">
-                  <img
-                    src={armeria}
-                    alt="armeria"
-                    className="nav-icon-img"
-                    style={{ width: "55px", height: "55px" }}
-                  />
-                  <span
-                    className="nav-icon-label"
-                    style={{ color: "black", fontSize: "12px" }}
-                  >
-                    <h style={{ fontWeight: 900 }}>ARMAS</h>
-                  </span>
-                </div>
-              </NavLink>
-              <NavLink
-                to="/CATEGORÍA/MUNICIONES"
-                className="nav-link text-white w-20 text-center"
-              >
-                <div className="nav-icon">
-                  <img
-                    src={municiones}
-                    alt="municiones"
-                    className="nav-icon-img"
-                    style={{ width: "55px", height: "55px" }}
-                  />
-                  <span
-                    className="nav-icon-label"
-                    style={{ color: "black", fontSize: "12px" }}
-                  >
-                    <h style={{ fontWeight: 900 }}>BALAS</h>
-                  </span>
-                </div>
-              </NavLink>
-              <NavLink to="/" className="nav-link text-white w-20 text-center">
-                <div className="nav-icon">
-                  <img
-                    src={
-                      "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
-                    }
-                    className="nav-icon-img"
-                    alt="logo"
-                    style={{ width: "55px", height: "55px" }}
-                  />
-                </div>
+
+        <Navbar
+          fixed="bottom"
+          bg="black"
+          variant="light"
+          className="ContainerNavbarMobile d-block d-lg-none"
+          style={{ zIndex: 9999 }}
+        >
+          <Nav style={{ justifyContent: "center" }}>
+            <NavLink
+              to="/CATEGORÍA/ARMERÍA"
+              className="nav-link text-white w-10 text-center"
+            >
+              <div className="nav-icon">
+                <img
+                  src={armeria}
+                  alt="armeria"
+                  className="nav-icon-img"
+                  style={{ width: "50px", height: "50px" }}
+                />
                 <span
                   className="nav-icon-label"
                   style={{ color: "black", fontSize: "12px" }}
                 >
-                  <h style={{ fontWeight: 900 }}>INICIO</h>
+                  <h style={{ fontWeight: 900 }}>ARMAS</h>
                 </span>
-              </NavLink>
+              </div>
+            </NavLink>
+            <NavLink
+              to="/CATEGORÍA/MUNICIONES"
+              className="nav-link text-white w-10 text-center"
+            >
+              <div className="nav-icon">
+                <img
+                  src={municiones}
+                  alt="municiones"
+                  className="nav-icon-img"
+                  style={{ width: "50px", height: "50px" }}
+                />
+                <span
+                  className="nav-icon-label"
+                  style={{ color: "black", fontSize: "12px" }}
+                >
+                  <h style={{ fontWeight: 900 }}>BALAS</h>
+                </span>
+              </div>
+            </NavLink>
+            <NavLink to="/" className="nav-link text-white w-10 text-center">
+              <div className="nav-icon">
+                <img
+                  src={
+                    "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
+                  }
+                  className="nav-icon-img"
+                  alt="logo"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </div>
+              <span
+                className="nav-icon-label"
+                style={{ color: "black", fontSize: "12px" }}
+              >
+                <h style={{ fontWeight: 900 }}>INICIO</h>
+              </span>
+            </NavLink>
 
-              <NavLink
-                to="/CATEGORÍA/NÁUTICA"
-                className="nav-link text-white w-20 text-center"
-              >
-                <div className="nav-icon">
-                  <img
-                    src={nautica}
-                    alt="nautica"
-                    className="nav-icon-img"
-                    style={{ width: "55px", height: "55px" }}
-                  />
-                  <span
-                    className="nav-icon-label"
-                    style={{ color: "black", fontSize: "12px" }}
-                  >
-                    <h style={{ fontWeight: 900 }}>NÁUTICA</h>
-                  </span>
-                </div>
-              </NavLink>
-              <NavLink
-                to="/CATEGORÍA/PESCA"
-                className="nav-link text-white w-20 text-center"
-              >
-                <div className="nav-icon">
-                  <img
-                    src={pesca}
-                    alt="pesca"
-                    className="nav-icon-img"
-                    style={{ width: "55px", height: "55px" }}
-                  />
-                  <span
-                    className="nav-icon-label"
-                    style={{ color: "black", fontSize: "12px" }}
-                  >
-                    <h style={{ fontWeight: 900 }}>PESCA</h>
-                  </span>
-                </div>
-              </NavLink>
-            </Nav>
-          </Navbar>
-        </>
+            <NavLink
+              to="/CATEGORÍA/NÁUTICA"
+              className="nav-link text-white w-10 text-center"
+            >
+              <div className="nav-icon">
+                <img
+                  src={nautica}
+                  alt="nautica"
+                  className="nav-icon-img"
+                  style={{ width: "50px", height: "50px" }}
+                />
+                <span
+                  className="nav-icon-label"
+                  style={{ color: "black", fontSize: "12px" }}
+                >
+                  <h style={{ fontWeight: 900 }}>NÁUTICA</h>
+                </span>
+              </div>
+            </NavLink>
+            <NavLink
+              to="/CATEGORÍA/PESCA"
+              className="nav-link text-white w-10 text-center"
+            >
+              <div className="nav-icon">
+                <img
+                  src={pesca}
+                  alt="pesca"
+                  className="nav-icon-img"
+                  style={{ width: "50px", height: "50px" }}
+                />
+                <span
+                  className="nav-icon-label"
+                  style={{ color: "black", fontSize: "12px" }}
+                >
+                  <h style={{ fontWeight: 900 }}>PESCA</h>
+                </span>
+              </div>
+            </NavLink>
+          </Nav>
+        </Navbar>
       ) : isDesktop ? (
         // Barra de navegación superior para dispositivos no móviles
         <Navbar
