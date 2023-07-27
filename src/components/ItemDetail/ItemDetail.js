@@ -75,9 +75,8 @@ export default function ItemDetail({ producto }) {
                       </span>
                     ) : (
                       <p>
-                        Este es un producto de nuestra página web. Para pedir,
-                        canjear o consultar, por favor envía un mensaje de
-                        WhatsApp al siguiente número: 342111111111. ¡Gracias!
+                        Este es un producto de nuestra página web. Para consultar, por favor envía un mensaje de
+                        WhatsApp ¡Gracias!
                       </p>
                     )}
                   </Accordion.Body>

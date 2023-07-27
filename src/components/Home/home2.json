@@ -5,7 +5,7 @@
       "to": "/CATEGORÍA/ARMERÍA",
       "text": "Nuestra selección de armas de calidad para tus actividades de caza y tiro.",
       "img": [
-        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361643/el%20rafa/slides%20home/tpzjroajzmdeuzavvxn8.png"
+        "https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479471/DESTACADAS/9_qwf8ns.png"
       ]
     }
   },
@@ -15,17 +15,17 @@
       "to": "/CATEGORÍA/NÁUTICA",
       "text": "Embarcaciones de primer nivel y usados, Aceites, Motores y mucho mas",
       "img": [
-        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/xps45gn51spjf7riutcz.png"
+        "https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479470/DESTACADAS/10_jsrbnf.png"
       ]
     }
   },
   {
-    "nautica": {
+    "municiones": {
       "nombre": "Municiones",
       "to": "/CATEGORÍA/MUNICIONES",
       "text": "Nuestras mejores opciones de municiones, cartuchos, balas y recarga.",
       "img": [
-        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1688585246/el%20rafa/municiones/DESTACADAS_EL_RAFA_aeoozf.png"
+        "https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479467/DESTACADAS/12_m88wir.png"
       ]
     }
   },
@@ -35,7 +35,7 @@
       "to": "/CATEGORÍA/PESCA",
       "text": "La mejor selección de cañas, reels, señuelos y todo lo que necesitas.",
       "img": [
-        "https://res.cloudinary.com/dhrfu31jp/image/upload/v1687361644/el%20rafa/slides%20home/ikodc4jcjqpl2wkzlekj.png"
+        "https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479468/DESTACADAS/13_limkiu.png"
       ]
     }
   }
