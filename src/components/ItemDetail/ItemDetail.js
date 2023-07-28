@@ -7,6 +7,7 @@ import { useCartContext } from "../Context/CartContext";
 import Hornady from "../Munitions/hornady/Hornady";
 import Magtech from "../Munitions/magtech/Magtech";
 import Remington from "../Munitions/remington/Remington";
+import Aguila from "../Munitions/aguila/Aguila";
 
 export default function ItemDetail({ producto }) {
   const [state, setState] = useState(true);
@@ -69,14 +70,17 @@ export default function ItemDetail({ producto }) {
                       <Magtech />
                     ) : producto.MARCA === "REMINGTON" ? (
                       <Remington />
+                    ) : producto.MARCA === "AGUILA" ? (
+                      <Aguila />
                     ) : producto.DESCRIPCION ? (
                       <span style={{ textAlign: "justify" }}>
                         <p>{producto.DESCRIPCION}</p>
                       </span>
                     ) : (
                       <p>
-                        Este es un producto de nuestra página web. Para consultar, por favor envía un mensaje de
-                        WhatsApp ¡Gracias!
+                        Este es un producto de nuestra página web. Para
+                        consultar, por favor envía un mensaje de WhatsApp
+                        ¡Gracias!
                       </p>
                     )}
                   </Accordion.Body>
