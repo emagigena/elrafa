@@ -9,7 +9,7 @@ const Footer = () => {
       <Link to="/">
         <img
           src={
-            "https://res.cloudinary.com/dhrfu31jp/image/upload/v1686603502/el%20rafa/logo-removebg-preview_5_pe3agn.png"
+            "https://res.cloudinary.com/ddoc1iaed/image/upload/v1692795488/DESTACADAS/logo-removebg-preview_5_wj9h8h.png"
           }
           alt=""
           height="90"
