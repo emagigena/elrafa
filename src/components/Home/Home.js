@@ -19,10 +19,10 @@ const Home = () => {
   }, []);
 
   const backgroundImageMobile =
-    'url("https://res.cloudinary.com/dhrfu31jp/image/upload/v1687459110/el%20rafa/slides%20home/14A2C2E2-6024-4015-8F44-994A9224B1B6_1_h0hbdv.png")';
+    'url("https://res.cloudinary.com/ddoc1iaed/image/upload/v1692795977/DESTACADAS/14A2C2E2-6024-4015-8F44-994A9224B1B6_1_fsc4je.png")';
 
   const backgroundImageDesktop =
-    'url("https://res.cloudinary.com/dhrfu31jp/image/upload/v1687461267/el%20rafa/slides%20home/elrafa4_xhawr9.jpg")';
+    'url("https://res.cloudinary.com/ddoc1iaed/image/upload/v1692796034/DESTACADAS/elrafa44_lbwzh5.jpg")';
 
   const backgroundImage = isMobile
     ? backgroundImageDesktop
