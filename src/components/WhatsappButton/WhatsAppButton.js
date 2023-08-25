@@ -4,7 +4,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     const message = "¡Hola, Escribo desde la pagina web y estoy interesado!"; // Mensaje editable
-    const phoneNumber = "1234567890"; // Número de WhatsApp al que se enviará el mensaje
+    const phoneNumber = "3425152705"; // Número de WhatsApp al que se enviará el mensaje
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;

@@ -75,7 +75,7 @@ export default function NavBar() {
                   }
                   className="nav-icon-img"
                   alt="logo"
-                  style={{ width: "50px", height: "50px" }}
+                  style={{ width: "45px", height: "45px" }}
                 />
               </div>
               <span
