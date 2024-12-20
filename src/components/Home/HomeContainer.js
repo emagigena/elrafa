@@ -17,13 +17,13 @@ export default function HomeContainer() {
           <Home />
         </li>
         <li>
-          <Home2 />
+          <Home4 />
         </li>
         <li>
           <Home3 />
         </li>
         <li>
-          <Home4 />
+          <Home2 />
         </li>
       </div>
     </div>
