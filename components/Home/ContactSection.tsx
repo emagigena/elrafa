@@ -22,7 +22,7 @@ export default function ContactSection() {
 
   // Get the first contact person for the quick contact card
   const firstContactType = Object.keys(contactData[0])[0]
-  const firstContact = contactData[0][firstContactType] as ContactPerson
+  const firstContact = { ...(contactData[0] as unknown as ContactItem)[firstContactType] }
 
   return (
     <section className="py-6">

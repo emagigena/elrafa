@@ -1,9 +1,9 @@
-import Hero from "@/components/home/Hero"
-import CategorySection from "@/components/home/CategorySection"
-import ContactSection from "@/components/home/ContactSection"
-import MapSection from "@/components/home/MapSection"
-import FeaturedProducts from "@/components/home/FeaturedProducts"
-import AllProducts from "@/components/home/AllProducts"
+import Hero from "../components/Home/Hero"
+import CategorySection from "../components/Home/CategorySection"
+import ContactSection from "@/components/Home/ContactSection"
+import MapSection from "@/components/Home/MapSection"
+import FeaturedProducts from "@/components/Home/FeaturedProducts"
+import AllProducts from "@/components/Home/AllProducts"
 
 export default function Home() {
   return (

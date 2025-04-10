@@ -16,7 +16,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { getFirestore, collection, addDoc, documentId, writeBatch, getDocs, where, query } from "firebase/firestore"
 import { initFirebase } from "@/lib/firebase"
-import WhatsAppCheckout from "@/components/cart/WhatsAppCheckout"
+import WhatsAppCheckout from "@/components/Cart/WhatsAppCheckout"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle, CheckCircle2 } from "lucide-react"
 

@@ -37,7 +37,7 @@ export default function CategorySection() {
   // Update category paths to match the new URL structure
   const updatedCategories = categoryData.map((category) => {
     const categoryType = Object.keys(category)[0]
-    const data = { ...(category[categoryType] as CategoryItem) }
+    const data = { ...(category as unknown as CategoryData)[categoryType] }
 
     // Update the path to match the new URL structure
     if (data.to.startsWith("/CATEGORÍA/")) {
