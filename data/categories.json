@@ -1,0 +1,34 @@
+[
+  {
+    "armeria": {
+      "nombre": "Armería",
+      "to": "/CATEGORÍA/ARMERÍA",
+      "text": "Nuestra selección de armas de calidad para tus actividades de caza y tiro.",
+      "img": ["https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479471/DESTACADAS/9_qwf8ns.png"]
+    }
+  },
+  {
+    "pesca": {
+      "nombre": "Náutica",
+      "to": "/CATEGORÍA/NÁUTICA",
+      "text": "Embarcaciones de primer nivel y usados, Aceites, Motores y mucho mas",
+      "img": ["https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479470/DESTACADAS/10_jsrbnf.png"]
+    }
+  },
+  {
+    "municiones": {
+      "nombre": "Municiones",
+      "to": "/CATEGORÍA/MUNICIONES",
+      "text": "Nuestras mejores opciones de municiones, cartuchos, balas y recarga.",
+      "img": ["https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479467/DESTACADAS/12_m88wir.png"]
+    }
+  },
+  {
+    "camping y pesca": {
+      "nombre": "Pesca",
+      "to": "/CATEGORÍA/PESCA",
+      "text": "La mejor selección de cañas, reels, señuelos y todo lo que necesitas.",
+      "img": ["https://res.cloudinary.com/ddoc1iaed/image/upload/v1690479468/DESTACADAS/13_limkiu.png"]
+    }
+  }
+]
