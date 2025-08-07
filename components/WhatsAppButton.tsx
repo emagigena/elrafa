@@ -6,7 +6,7 @@ import { MessageCircle } from "lucide-react"
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
     const message = "¡Hola, Escribo desde la pagina web y estoy interesado!"
-    const phoneNumber = "3425152705"
+    const phoneNumber = "3426131640"
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(url, "_blank")
   }

@@ -39,7 +39,7 @@ export default function Footer() {
               <Instagram className="h-6 w-6" />
             </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=3425152705&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=3426131640&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-200 transition-colors"

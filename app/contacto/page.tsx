@@ -40,12 +40,12 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold mb-4">CONTACTÁ CON NOSOTROS</h1>
-        <p className="text-lg font-medium">Lun a Vie 8.30H a 12:30H - 16.30H 20.30H | Sab de 8:30H a 12:30H.</p>
+        <p className="text-lg font-medium">Lun a Vie 9hs a 12hs - 15.30hs 19.30hs | Sab de 8:30hs a 12:30hs.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+      <div className="justify-items-center">
         {contactData.map((contact, index) => {
-          const contactType = Object.keys(contact)[0]
+          const contactType = Object.keys(contact)[0] as keyof typeof contact
           const person = contact[contactType] as ContactPerson
 
           return (

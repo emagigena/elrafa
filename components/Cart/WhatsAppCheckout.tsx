@@ -18,7 +18,7 @@ export default function WhatsAppCheckout({ cartItems, formData, onSubmit }: What
   const contactarVentas = () => {
     const productosInfo = cartItems.map((item) => `${item.NOMBRE} - ${item.cantidad} unidades`)
     const message = `Hola, mi nombre es ${formData.nombre} ${formData.apellido}. Escribo desde la página web y estoy interesado en los siguientes productos: ${productosInfo.join(", ")}`
-    const url = `https://wa.me/3425152705?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/3426131640?text=${encodeURIComponent(message)}`
     window.open(url, "_blank")
   }
 
