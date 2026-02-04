@@ -8,7 +8,7 @@ const IrWhatsapp = ({ cartList, dataFormulario, generarOrden }) => {
     const message = `Mis Nombre: ${
       dataFormulario.nombre
     }, Escribo desde la pagina web y estoy interesado por: ${productosInfo.join()}`
-    const url = `https://wa.me/3426131640?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/3425993334?text=${encodeURIComponent(message)}`
     window.open(url, "_blank")
   }
 

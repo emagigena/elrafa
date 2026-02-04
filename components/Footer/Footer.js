@@ -53,7 +53,7 @@ const Footer = () => {
           <div style={{ margin: "10px" }}>
             <a
               style={{ color: "white" }}
-              href="https://api.whatsapp.com/send/?phone=3426131640&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=3425993334&text&type=phone_number&app_absent=0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
